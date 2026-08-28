@@ -23,20 +23,6 @@
       ]
     },
     {
-      "name": "vmware-avi",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/vmware-skills/VMware-AVI.git"
-      },
-      "description": "VMware AVI (NSX ALB) load balancer plus AKO Kubernetes ops — 28 MCP tools.",
-      "keywords": [
-        "avi",
-        "mcp",
-        "vmware",
-        "vsphere"
-      ]
-    },
-    {
       "name": "vmware-aria",
       "source": {
         "source": "url",
@@ -51,6 +37,20 @@
       ]
     },
     {
+      "name": "vmware-avi",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/vmware-skills/VMware-AVI.git"
+      },
+      "description": "VMware AVI (NSX ALB) load balancer plus AKO Kubernetes ops — 28 MCP tools.",
+      "keywords": [
+        "avi",
+        "mcp",
+        "vmware",
+        "vsphere"
+      ]
+    },
+    {
       "name": "vmware-debug",
       "source": {
         "source": "url",
@@ -59,6 +59,21 @@
       "description": "Read-only VMware incident correlation: timeline, spikes, root-cause routing. 2 MCP tools.",
       "keywords": [
         "debug",
+        "mcp",
+        "vmware",
+        "vsphere"
+      ]
+    },
+    {
+      "name": "vmware-harden",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/vmware-skills/VMware-Harden.git"
+      },
+      "description": "VMware compliance scanning (CIS, vSphere SCG, GB/T 22239, PCI-DSS) with drift detection.",
+      "keywords": [
+        "compliance",
+        "harden",
         "mcp",
         "vmware",
         "vsphere"
