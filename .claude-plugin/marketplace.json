@@ -14,7 +14,7 @@
         "source": "url",
         "url": "https://github.com/vmware-skills/VMware-AIops.git"
       },
-      "description": "AI-powered VMware vCenter/ESXi VM lifecycle and deployment with 31 MCP tools.",
+      "description": "AI-powered VMware vCenter/ESXi VM lifecycle and deployment with 60 MCP tools.",
       "keywords": [
         "aiops",
         "mcp",
@@ -28,7 +28,7 @@
         "source": "url",
         "url": "https://github.com/vmware-skills/VMware-AVI.git"
       },
-      "description": "VMware AVI (NSX ALB) load balancer plus AKO Kubernetes ops — 29 MCP tools.",
+      "description": "VMware AVI (NSX ALB) load balancer plus AKO Kubernetes ops — 28 MCP tools.",
       "keywords": [
         "avi",
         "mcp",
@@ -42,7 +42,7 @@
         "source": "url",
         "url": "https://github.com/vmware-skills/VMware-Aria.git"
       },
-      "description": "VMware Aria Operations: metrics, alerts, capacity, anomaly detection — 18 MCP tools.",
+      "description": "VMware Aria Operations: metrics, alerts, capacity, anomaly detection — 33 MCP tools.",
       "keywords": [
         "aria",
         "mcp",
@@ -84,7 +84,7 @@
         "source": "url",
         "url": "https://github.com/vmware-skills/VMware-Monitor.git"
       },
-      "description": "Read-only VMware vCenter/ESXi monitoring with 27 MCP tools. Code-level safety.",
+      "description": "Read-only VMware vCenter/ESXi monitoring with 31 MCP tools. Code-level safety.",
       "keywords": [
         "mcp",
         "monitor",
@@ -98,7 +98,7 @@
         "source": "url",
         "url": "https://github.com/vmware-skills/VMware-NSX.git"
       },
-      "description": "VMware NSX networking management with 31 MCP tools: segments, gateways, NAT, routing, IPAM.",
+      "description": "VMware NSX networking management with 33 MCP tools: segments, gateways, NAT, routing, IPAM.",
       "keywords": [
         "mcp",
         "nsx",
@@ -154,7 +154,7 @@
         "source": "url",
         "url": "https://github.com/vmware-skills/VMware-PrivateAI.git"
       },
-      "description": "VMware Private AI (NVIDIA): GPU inventory, vGPU profiles, utilization, model serving — 10 tools",
+      "description": "VMware Private AI (NVIDIA): GPU inventory, vGPU profiles, utilization, model serving — 17 tools",
       "keywords": [
         "mcp",
         "privateai",
@@ -168,7 +168,7 @@
         "source": "url",
         "url": "https://github.com/vmware-skills/VMware-Storage.git"
       },
-      "description": "VMware vSphere storage management with 11 MCP tools: datastores, iSCSI, vSAN.",
+      "description": "VMware vSphere storage management with 12 MCP tools: datastores, iSCSI, vSAN.",
       "keywords": [
         "mcp",
         "storage",
