@@ -56,7 +56,7 @@
         "source": "url",
         "url": "https://github.com/vmware-skills/VMware-Debug.git"
       },
-      "description": "Read-only VMware incident correlation: timeline, spikes, root-cause routing. 2 MCP tools.",
+      "description": "VMware incident timeline, root-cause routing, local case ledger; no vSphere access. 14 MCP tools.",
       "keywords": [
         "debug",
         "mcp",
