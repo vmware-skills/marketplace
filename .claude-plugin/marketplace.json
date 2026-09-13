@@ -28,7 +28,7 @@
         "source": "url",
         "url": "https://github.com/vmware-skills/VMware-Aria.git"
       },
-      "description": "VMware Aria Operations: metrics, alerts, capacity, anomaly detection — 33 MCP tools.",
+      "description": "VMware Aria Operations: metrics, alerts, capacity, anomaly detection — 44 MCP tools.",
       "keywords": [
         "aria",
         "mcp",
