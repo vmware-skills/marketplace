@@ -4,6 +4,8 @@ vSphere, NSX, Aria, Horizon and Tanzu operations for agents. Each plugin ships
 one skill and its MCP server, so a single install gives an agent both the
 procedure and the tools.
 
+To check a model and agent host against your own read-only VMware task, use the shared [model-fit self-test](MODEL_FIT_SELF_TEST.md) in this repository root.
+
 ```
 /plugin marketplace add vmware-skills/marketplace
 /plugin install vmware-monitor@vmware-skills
