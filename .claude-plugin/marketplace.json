@@ -169,7 +169,7 @@
         "source": "url",
         "url": "https://github.com/vmware-skills/VMware-PrivateAI.git"
       },
-      "description": "VMware Private AI (NVIDIA): GPU inventory, vGPU profiles, utilization, model serving — 18 tools",
+      "description": "VMware Private AI (NVIDIA): GPU inventory, vGPU profiles, utilization, model serving — 20 tools",
       "keywords": [
         "mcp",
         "privateai",
