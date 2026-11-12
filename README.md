@@ -6,13 +6,13 @@ English · [简体中文](README-CN.md)
 
 **15 skills · 14 MCP servers · one shared Policy library.** Community-maintained, MIT-licensed, and not an official VMware, Broadcom or Omnissa product.
 
-[![18-second read-only investigation demo](assets/demos/vmware-skills-en.gif)](assets/demos/vmware-skills-en.mp4)
+[![18-second read-only investigation demo](assets/demos/vmware-skills-en.gif)](https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-12/vmware-skills-en.mp4)
 
-**The GIF uses synthetic data.** The narrated video also shows redacted excerpts from historical usage screenshots, including an assistant-prepared summary of exported audit records. Each source type is labeled; the video is not a new live test. English and Chinese videos use matching-language captures, with enlarged transcripts for dense logs. Watch at 1080p for table detail.
+GIF: synthetic data. Videos: redacted historical screenshots. [Video notes](assets/demos/README.md).
 
-[Watch the narrated introduction (~2 minutes)](assets/demos/vmware-skills-en.mp4) · [Download captions](assets/demos/vmware-skills-en.srt)
+[Download the narrated introduction (~2 minutes)](https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-12/vmware-skills-en.mp4) · [Download captions](assets/demos/vmware-skills-en.srt)
 
-Narration uses an AI-generated preset voice, not a recording of the maintainer. If the project helps your work, **star this family portal** so others can find it.
+If the project helps your work, **star this family portal** so others can find it.
 
 ## What can I do with it?
 
@@ -41,6 +41,13 @@ bash scripts/install-plugins.sh --all
 ```
 
 Use --dry-run to inspect the commands first. Without --all, the helper installs only Monitor. It delegates marketplace and plugin installation to Claude Code without bypassing trust prompts; this is not a new installer for arbitrary agents. All-module installation exposes more tools and requires separate module configuration.
+
+</details>
+
+<details>
+<summary>Cursor, Codex, Gemini CLI, Cline and local-model hosts</summary>
+
+Use the [host setup guide](docs/agent-hosts.md) for copyable JSON/TOML examples and configuration locations. These hosts do not require the Claude Code plugin marketplace. Configure targets locally, then verify one read-only query.
 
 </details>
 
@@ -76,7 +83,7 @@ Use the shared [model-fit self-test](MODEL_FIT_SELF_TEST.md) to validate a read-
 
 ## Demos, feedback and community
 
-- [English narrated video](assets/demos/vmware-skills-en.mp4) · [Chinese narrated video](assets/demos/vmware-skills-zh.mp4)
+- [English narrated video](https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-12/vmware-skills-en.mp4) · [Chinese narrated video](https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-12/vmware-skills-zh.mp4)
 - [Reproduce the animations and audio](media/vmware-skills-demo/README.md).
 - [Share an issue or suggestion](https://github.com/vmware-skills/marketplace/issues). Component bugs belong in the relevant component repository.
 - GitHub: https://github.com/vmware-skills · MIT license.

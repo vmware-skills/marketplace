@@ -31,11 +31,6 @@
       "sha256": "72fb3d32123008cbb9ede8f40bbb99257e3e965a12d3f5637f2c1aa41afff68f"
     },
     {
-      "file": "assets/demos/vmware-skills-en.mp4",
-      "bytes": 8195535,
-      "sha256": "f76c74ad9b00d4a3a0f7d1fafe4f7abaabce825fa62e8b235cd1cde45d55b488"
-    },
-    {
       "file": "assets/demos/vmware-skills-en.srt",
       "bytes": 2614,
       "sha256": "0200b13eb8a52775c7f25128e2d471a0bff819a0a6f1671dcc493625909f0362"
@@ -44,11 +39,6 @@
       "file": "assets/demos/vmware-skills-zh.gif",
       "bytes": 288551,
       "sha256": "8e47cb5d9874b20ea215970b306b12247c2a33aeb7e3109d431fb37f2ccd828e"
-    },
-    {
-      "file": "assets/demos/vmware-skills-zh.mp4",
-      "bytes": 7696193,
-      "sha256": "2ba453be333036e4ec998aa9d5290728d67ea4af7f2df5a8b045221db5a32b54"
     },
     {
       "file": "assets/demos/vmware-skills-zh.srt",
@@ -120,5 +110,19 @@
     "englishAuditRows": 14,
     "chineseAuditRows": 15,
     "originalDetail": "Limited by source resolution; no detail synthesis"
-  }
+  },
+  "releaseAssets": [
+    {
+      "name": "vmware-skills-en.mp4",
+      "url": "https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-12/vmware-skills-en.mp4",
+      "bytes": 8195535,
+      "sha256": "f76c74ad9b00d4a3a0f7d1fafe4f7abaabce825fa62e8b235cd1cde45d55b488"
+    },
+    {
+      "name": "vmware-skills-zh.mp4",
+      "url": "https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-12/vmware-skills-zh.mp4",
+      "bytes": 7696193,
+      "sha256": "2ba453be333036e4ec998aa9d5290728d67ea4af7f2df5a8b045221db5a32b54"
+    }
+  ]
 }

@@ -3,3 +3,6 @@ media/**/.cache/
 media/**/build/
 media/**/out/
 .DS_Store
+
+# Generated introductions are published as GitHub Release assets.
+/assets/demos/*.mp4
