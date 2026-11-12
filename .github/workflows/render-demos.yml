@@ -1,0 +1,43 @@
+name: Render bilingual demos
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'media/vmware-skills-demo/**'
+      - '.github/workflows/render-demos.yml'
+permissions:
+  contents: read
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        language: [en, zh]
+    defaults:
+      run:
+        working-directory: media/vmware-skills-demo
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: media/vmware-skills-demo/package-lock.json
+      - run: npm ci
+      - name: Render introduction, short demo and poster
+        run: |
+          mkdir -p out
+          npx remotion render src/index.tsx Intro-${{ matrix.language }} out/vmware-skills-${{ matrix.language }}.mp4 --codec=h264 --crf=24 --concurrency=4
+          npx remotion render src/index.tsx Demo-${{ matrix.language }} out/demo-${{ matrix.language }}.mp4 --codec=h264 --scale=0.5 --crf=22 --concurrency=4
+          npx remotion still src/index.tsx Demo-${{ matrix.language }} out/poster-${{ matrix.language }}.png --frame=200 --scale=0.5
+      - name: Encode README GIF
+        run: |
+          ffmpeg -y -i out/demo-${{ matrix.language }}.mp4 -filter_complex "[0:v]fps=8,split[a][b];[a]palettegen=max_colors=128[p];[b][p]paletteuse=dither=bayer:bayer_scale=4" -loop 0 out/vmware-skills-${{ matrix.language }}.gif
+          ffprobe -v error -show_entries stream=codec_name,width,height -show_entries format=duration,size -of json out/vmware-skills-${{ matrix.language }}.mp4 > out/probe-${{ matrix.language }}.json
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: vmware-demos-${{ matrix.language }}
+          path: media/vmware-skills-demo/out/
+          retention-days: 14

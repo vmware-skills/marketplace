@@ -1,57 +1,82 @@
-# VMware Skills plugin marketplace
+# VMware Skills
 
-vSphere, NSX, Aria, Horizon and Tanzu operations for agents. Each plugin ships
-one skill and its MCP server, so a single install gives an agent both the
-procedure and the tools.
+AI-assisted VMware operations: ask a question, investigate the evidence, and plan the next step. Start with read-only Monitor; add focused modules when needed.
 
-To check a model and agent host against your own read-only VMware task, use the shared [model-fit self-test](MODEL_FIT_SELF_TEST.md) in this repository root.
+English · [简体中文](README-CN.md)
 
-For an offline task template usable with any small model, start with the [60 synthetic assessment tasks](model-fit/README.md) ([中文](model-fit/README-CN.md)) and [judgment results](model-fit/results/README.md). No VMware connection is required; proposed actions are never executed.
+**15 skills · 14 MCP servers · one shared Policy library.** Community-maintained, MIT-licensed, and not an official VMware, Broadcom or Omnissa product.
 
-```
+[![18-second read-only investigation demo](assets/demos/vmware-skills-en.gif)](assets/demos/vmware-skills-en.mp4)
+
+**Illustrative animation with synthetic data**, not a recording of a live connection. It shows a question → Monitor query → observations, unknowns and next checks.
+
+[Watch the narrated introduction (~2 minutes)](assets/demos/vmware-skills-en.mp4) · [Download captions](assets/demos/vmware-skills-en.srt)
+
+Narration uses an AI-generated preset voice, not a recording of the maintainer. If the project helps your work, **star this family portal** so others can find it.
+
+## What can I do with it?
+
+- **Find what needs attention:** cluster health, alarms, snapshots, storage and surrounding events.
+- **Investigate with evidence:** connect VM, host and datastore observations; keep missing evidence visible.
+- **Plan operational workflows:** assess, review, execute and verify across focused modules.
+
+## Start with one read-only module
+
+In Claude Code, add the marketplace and install Monitor:
+
+```text
 /plugin marketplace add vmware-skills/marketplace
 /plugin install vmware-monitor@vmware-skills
 ```
 
-## Start read-only
+Requires Claude Code, Python 3.10+ and uv/uvx. PrivateAI requires Python 3.11+. Each plugin retains its component’s pinned runtime configuration. Configure real targets and credentials locally using the [Monitor setup guide](https://github.com/vmware-skills/VMware-Monitor/blob/main/skills/vmware-monitor/references/setup-guide.md); installation alone does not establish a connection. Pilot also needs the companion MCP executables for the workflows you run.
 
-`vmware-monitor` is read-only by construction — no power, create, delete,
-snapshot, clone, reconfigure or migrate tool exists in it. Reach for
-`vmware-aiops` only when you actually need lifecycle operations.
+<details>
+<summary>Optional: install the entire plugin catalog</summary>
 
-## Plugins
+After cloning this repository, run one command to install all 15 catalog entries:
 
-| Plugin | Scope |
-|---|---|
-| `vmware-monitor` | Read-only vCenter/ESXi monitoring: inventory, alarms, events, host health |
-| `vmware-aiops` | VM lifecycle: power, clone, snapshot, migrate, deploy, guest exec, batch |
-| `vmware-nsx` | NSX networking: segments, gateways, NAT, routing, IPAM |
-| `vmware-nsx-security` | NSX security: DFW policies, groups, tags, Traceflow, IDPS |
-| `vmware-storage` | vSphere storage: datastores, iSCSI, vSAN |
-| `vmware-vks` | vSphere with Tanzu: Namespace and TanzuKubernetesCluster lifecycle |
-| `vmware-avi` | AVI (NSX ALB) load balancing plus AKO |
-| `vmware-aria` | Aria Operations: metrics, alerts, capacity, anomaly detection |
-| `vmware-log-insight` | Aria Operations for Logs: search and aggregation (read-only) |
-| `vmware-vdi` | Omnissa Horizon VDI: pools, sessions, machines, images |
-| `vmware-privateai` | Private AI on NVIDIA: GPU inventory, vGPU profiles, utilisation |
-| `vmware-debug` | Read-only incident correlation: timeline, spikes, root-cause routing |
-| `vmware-pilot` | Multi-step workflow orchestration with approval gates and rollback |
-| `vmware-policy` | Shared audit log, policy rules and sanitisation for the family |
+```sh
+bash scripts/install-plugins.sh --all
+```
 
-`vmware-harden` (compliance scanning) is not listed yet — its next release is
-still unpublished, and an entry pinned to an unpublished version would fail on
-install. It joins once that release ships.
+Use --dry-run to inspect the commands first. Without --all, the helper installs only Monitor. It delegates marketplace and plugin installation to Claude Code without bypassing trust prompts; this is not a new installer for arbitrary agents. All-module installation exposes more tools and requires separate module configuration.
 
-## Requirements
+</details>
 
-Each plugin's MCP server is fetched with [uv](https://docs.astral.sh/uv/) and
-pinned to the exact published package version the plugin declares. Every tool
-also ships a CLI (`vmware-monitor --help`).
+## How the family fits together
 
-`vmware-policy` is the family's shared governance layer — audit logging, policy
-enforcement and input sanitisation for every tool in every other plugin. It has
-no MCP server of its own; install it for the `vmware-audit` CLI and the skill
-that queries the audit trail.
+![Family overview](assets/family-overview-en.svg)
 
-MIT licensed. Not affiliated with, endorsed by, or sponsored by Broadcom,
-VMware, or Omnissa.
+Pilot coordinates workflows; 13 domain skills handle focused tasks; Policy is a shared library used by the servers, not a standalone MCP server. The 15 repositories remain independently versioned.
+
+| Component | Plugin | Purpose |
+|---|---|---|
+| [VMware-Monitor](https://github.com/vmware-skills/VMware-Monitor) | `vmware-monitor` | Read-only health, inventory, alarms and evidence-based investigation |
+| [VMware-AIops](https://github.com/vmware-skills/VMware-AIops) | `vmware-aiops` | VM lifecycle, deployment, guest operations and plans |
+| [VMware-Aria](https://github.com/vmware-skills/VMware-Aria) | `vmware-aria` | Metrics, alerts, capacity and rightsizing |
+| [VMware-NSX](https://github.com/vmware-skills/VMware-NSX) | `vmware-nsx` | Networking, gateways, NAT, BGP and IPAM |
+| [VMware-NSX-Security](https://github.com/vmware-skills/VMware-NSX-Security) | `vmware-nsx-security` | Firewall policies, groups, Traceflow and IDPS |
+| [VMware-Storage](https://github.com/vmware-skills/VMware-Storage) | `vmware-storage` | Datastores, iSCSI and FC/device-path diagnostics |
+| [VMware-VKS](https://github.com/vmware-skills/VMware-VKS) | `vmware-vks` | Supervisor, namespaces and Kubernetes lifecycle |
+| [VMware-AVI](https://github.com/vmware-skills/VMware-AVI) | `vmware-avi` | Load balancing, pools, service engines and AKO |
+| [VMware-Harden](https://github.com/vmware-skills/VMware-Harden) | `vmware-harden` | Compliance scans, vulnerability evidence and drift |
+| [VMware-Debug](https://github.com/vmware-skills/VMware-Debug) | `vmware-debug` | Offline incident timelines and evidence correlation |
+| [VMware-Log-Insight](https://github.com/vmware-skills/VMware-Log-Insight) | `vmware-log-insight` | Read-only log search, aggregation and spike investigation |
+| [VMware-VDI](https://github.com/vmware-skills/VMware-VDI) | `vmware-vdi` | Horizon pools, sessions, machines and images |
+| [VMware-PrivateAI](https://github.com/vmware-skills/VMware-PrivateAI) | `vmware-privateai` | GPU/vGPU readiness, profiles and PAIS queries |
+| [VMware-Pilot](https://github.com/vmware-skills/VMware-Pilot) | `vmware-pilot` | Multi-step workflows, checkpoints and verification |
+| [VMware-Policy](https://github.com/vmware-skills/VMware-Policy) | `vmware-policy` | Shared governance library and vmware-audit CLI; no MCP server |
+
+## Evidence, permissions and local data
+
+Monitor does not mutate VMware infrastructure. It can still write local configuration, audit logs and exported reports; optional daemon/webhook behavior is documented in its setup guide. Other modules include writes. Existing VMware RBAC and local Policy still apply. Destructive tools have preview/confirmation gates, but a caller-supplied confirmation flag is not independent human approval. Rollback is best effort. Keep TLS verification enabled.
+
+Use the shared [model-fit self-test](MODEL_FIT_SELF_TEST.md) to validate a read-only task with your model and agent host. Scope and real-environment compatibility are recorded in each component’s documentation; availability of a package or a demo is not a live-platform validation claim.
+
+## Demos, feedback and community
+
+- [English narrated video](assets/demos/vmware-skills-en.mp4) · [Chinese narrated video](assets/demos/vmware-skills-zh.mp4)
+- [Reproduce the animations and audio](media/vmware-skills-demo/README.md).
+- [Share an issue or suggestion](https://github.com/vmware-skills/marketplace/issues). Component bugs belong in the relevant component repository.
+- GitHub: https://github.com/vmware-skills · MIT license.
