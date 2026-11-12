@@ -1,6 +1,6 @@
 # Reproduce the bilingual demos
 
-These Remotion sources generate the English/Chinese README GIFs and narrated introduction videos. The short demo and investigation scene use synthetic records and are continuously labeled as illustrative. No infrastructure API is contacted by rendering. Audio is AI-generated using Edge TTS preset voices (en-US-AriaNeural / zh-CN-XiaoxiaoNeural), not the maintainer's voice.
+These Remotion sources generate the English/Chinese README GIFs and narrated introduction videos. The short GIF uses synthetic records and is labeled illustrative. The introduction additionally includes maintainer-provided historical screenshot excerpts, continuously labeled as historical. Inventory notes, audit targets and two rows containing resource suffixes are omitted; original screenshot text and values in the shown cells are retained. The audit table is an assistant-prepared view of exported records, not a raw database view or completeness proof. Captured tool names may differ from current releases. Original PNG files stay local; only sanitized video excerpts are published. No infrastructure API is contacted by rendering. Audio is AI-generated using Edge TTS preset voices (en-US-AriaNeural / zh-CN-XiaoxiaoNeural), not the maintainer's voice.
 
 Use Node.js 22+ and the committed package lock:
 

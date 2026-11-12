@@ -6,21 +6,21 @@ What needs attention in your VMware environment? VMware Skills connects an AI as
 
 The family covers vSphere, networking, storage, observability and more. Pilot coordinates workflows. Domain servers connect to their management systems. Policy provides shared checks, sanitization and audit logging. Start with the read-only Monitor.
 
-## 3. From a question to a focused investigation.
+## 3. From a question to real inventory.
 
-Here is an illustrative example using synthetic data. Ask what needs attention. Monitor returns observations about snapshots and storage. The assistant separates measured facts from missing evidence, then suggests the next checks. No infrastructure changes are made.
+Here is a historical screenshot from an actual session. The inventory view returned one vCenter, two standalone hosts, and thirteen VMs. The notes column containing environment identifiers is omitted. These are recorded results, not a fresh inventory of the environment.
 
-## 4. Make uncertainty visible.
+## 4. Health with context, not guesswork.
 
-An old snapshot is an observation. Future capacity is unknown without trend data. A report should preserve that difference. Local configuration, audit logs and exported reports can still write files, even when infrastructure access is read-only.
+The health screenshot records connected hosts and critical alarms in the same view. That does not establish a current incident. Check when the observation was captured and whether the alarms still apply before deciding what to investigate next.
 
 ## 5. Plan changes with explicit boundaries.
 
 When changes are needed, use the relevant domain skill and a reviewed workflow. Existing VMware permissions and local policy still apply. Destructive tools use preview and confirmation gates. A confirmation flag is not independent human approval, and rollback is best effort.
 
-## 6. Start small. Run locally.
+## 6. Finish with a traceable audit trail.
 
-Use the family portal to choose a module and an installation method. Configure targets and credentials locally. Begin with a read-only task and validate your model and agent host. Add other skills only as your workflow needs them.
+Finally, follow the audit trail. This is an assistant-prepared summary of exported records, showing time, skill, tool, MCP or CLI, status and duration. We omit the target column and show fourteen rows. Names reflect the captured version; use the original records to check completeness.
 
 ## 7. Make everyday operations a little easier.
 

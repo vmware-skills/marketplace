@@ -8,7 +8,7 @@ English · [简体中文](README-CN.md)
 
 [![18-second read-only investigation demo](assets/demos/vmware-skills-en.gif)](assets/demos/vmware-skills-en.mp4)
 
-**Illustrative animation with synthetic data**, not a recording of a live connection. It shows a question → Monitor query → observations, unknowns and next checks.
+**The GIF uses synthetic data.** The narrated video also shows redacted excerpts from historical usage screenshots, including an assistant-prepared summary of exported audit records. Each source type is labeled; the video is not a new live test.
 
 [Watch the narrated introduction (~2 minutes)](assets/demos/vmware-skills-en.mp4) · [Download captions](assets/demos/vmware-skills-en.srt)
 

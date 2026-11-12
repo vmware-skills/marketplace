@@ -19,22 +19,22 @@
       "frames": 604
     },
     {
-      "title": "From a question to a focused investigation.",
-      "subtitle": "Illustrative animation · synthetic environment",
-      "speech": "Here is an illustrative example using synthetic data. Ask what needs attention. Monitor returns observations about snapshots and storage. The assistant separates measured facts from missing evidence, then suggests the next checks. No infrastructure changes are made.",
-      "kind": "demo",
-      "audio": "audio/en-02.mp3",
-      "audioDuration": 18.888,
-      "frames": 609
+      "kind": "recorded-inventory",
+      "title": "From a question to real inventory.",
+      "subtitle": "Historical screenshot excerpt · original English output",
+      "speech": "Here is a historical screenshot from an actual session. The inventory view returned one vCenter, two standalone hosts, and thirteen VMs. The notes column containing environment identifiers is omitted. These are recorded results, not a fresh inventory of the environment.",
+      "audio": "audio/en-capture-02.mp3",
+      "audioDuration": 18.36,
+      "frames": 593
     },
     {
-      "title": "Make uncertainty visible.",
-      "subtitle": "Observed facts · evidence gaps · next checks",
-      "speech": "An old snapshot is an observation. Future capacity is unknown without trend data. A report should preserve that difference. Local configuration, audit logs and exported reports can still write files, even when infrastructure access is read-only.",
-      "kind": "evidence",
-      "audio": "audio/en-03.mp3",
-      "audioDuration": 17.616,
-      "frames": 571
+      "kind": "recorded-health",
+      "title": "Health with context, not guesswork.",
+      "subtitle": "Captured observations · verify timing and scope",
+      "speech": "The health screenshot records connected hosts and critical alarms in the same view. That does not establish a current incident. Check when the observation was captured and whether the alarms still apply before deciding what to investigate next.",
+      "audio": "audio/en-capture-03.mp3",
+      "audioDuration": 14.64,
+      "frames": 482
     },
     {
       "title": "Plan changes with explicit boundaries.",
@@ -46,13 +46,13 @@
       "frames": 603
     },
     {
-      "title": "Start small. Run locally.",
-      "subtitle": "Choose Monitor first · add modules when needed",
-      "speech": "Use the family portal to choose a module and an installation method. Configure targets and credentials locally. Begin with a read-only task and validate your model and agent host. Add other skills only as your workflow needs them.",
-      "kind": "start",
-      "audio": "audio/en-05.mp3",
-      "audioDuration": 15.456,
-      "frames": 506
+      "kind": "recorded-audit",
+      "title": "Finish with a traceable audit trail.",
+      "subtitle": "Historical export summary · target identifiers omitted",
+      "speech": "Finally, follow the audit trail. This is an assistant-prepared summary of exported records, showing time, skill, tool, MCP or CLI, status and duration. We omit the target column and show fourteen rows. Names reflect the captured version; use the original records to check completeness.",
+      "audio": "audio/en-capture-05.mp3",
+      "audioDuration": 20.472,
+      "frames": 657
     },
     {
       "title": "Make everyday operations a little easier.",
@@ -84,22 +84,22 @@
       "frames": 525
     },
     {
-      "title": "从一句提问，到一次有重点的调查。",
-      "subtitle": "示意动画 · 合成环境数据",
-      "speech": "来看一段使用合成数据的示意演示。询问现在最需要关注什么，Monitor 返回快照和存储的观测。助手区分已测量的事实与证据缺口，再给出下一步检查建议。整个场景不修改基础设施。",
-      "kind": "demo",
-      "audio": "audio/zh-02.mp3",
-      "audioDuration": 17.28,
-      "frames": 561
+      "kind": "recorded-inventory",
+      "title": "问一句，看到实际调用返回的清单。",
+      "subtitle": "历史截图节选 · 保留原始英文界面",
+      "speech": "这里是实际调用的历史截图。清单返回了一个 vCenter、两台独立主机和十三台虚拟机。包含环境标识的备注列已经裁去。它展示当时查询范围内的结果，不是对当前环境重新做的一次清查。",
+      "audio": "audio/zh-capture-02.mp3",
+      "audioDuration": 17.616,
+      "frames": 571
     },
     {
-      "title": "把不确定性留在结果里。",
-      "subtitle": "观测事实 · 证据缺口 · 下一步检查",
-      "speech": "快照存在多久，是一条观测；没有历史趋势，就不能推断容量何时耗尽。报告需要保留这种区别。基础设施访问只读，也仍然可能在本机写入配置、审计和导出的报告。",
-      "kind": "evidence",
-      "audio": "audio/zh-03.mp3",
-      "audioDuration": 15.72,
-      "frames": 514
+      "kind": "recorded-health",
+      "title": "看健康，也保留判断边界。",
+      "subtitle": "历史观测 · 核对时间与查询范围",
+      "speech": "健康截图把主机连接状态和严重告警放在同一个视图里。但历史状态不等于当前正在发生故障。决定下一步前，仍要核对观测时间，以及告警现在是否依然成立。",
+      "audio": "audio/zh-capture-03.mp3",
+      "audioDuration": 15.048,
+      "frames": 494
     },
     {
       "title": "需要变更时，先明确边界。",
@@ -111,13 +111,13 @@
       "frames": 572
     },
     {
-      "title": "从小任务开始，在本地运行。",
-      "subtitle": "先选择 Monitor，再按需增加模块",
-      "speech": "在家族门户选择模块和安装方式，把目标与凭据配置在本地。从一个只读任务开始，验证你的模型和 Agent 宿主，再按实际工作流增加其他技能。",
-      "kind": "start",
-      "audio": "audio/zh-05.mp3",
-      "audioDuration": 13.68,
-      "frames": 453
+      "kind": "recorded-audit",
+      "title": "最后，用审计记录追溯调用。",
+      "subtitle": "历史导出汇总 · 已省略目标标识",
+      "speech": "最后看审计记录。这是基于导出记录整理的助手汇总，列出时间、技能、工具、MCP 或 CLI 路径、状态和耗时。演示省略目标列，节选十四行。工具名称保留截图当时版本；完整性仍需核对原始记录。",
+      "audio": "audio/zh-capture-05.mp3",
+      "audioDuration": 20.016,
+      "frames": 643
     },
     {
       "title": "让日常运维，轻松一点。",

@@ -1,6 +1,7 @@
 import React from 'react';
 import {AbsoluteFill, Composition, Html5Audio, Sequence, interpolate, registerRoot, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
 import scenes from './scenes.json';
+import {RecordedAudit, RecordedHealth, RecordedInventory} from './CapturedScenes';
 
 type Lang = 'en' | 'zh';
 const C={ink:'#14243a',muted:'#64748b',cyan:'#0891b2',pale:'#e7f7fb',amber:'#d97706',line:'#dce5ef',paper:'#f5f8fc',green:'#13866e'};
@@ -9,12 +10,12 @@ const tx=(l:Lang,en:string,zh:string)=>l==='en'?en:zh;
 const panel:React.CSSProperties={background:'white',border:`1px solid ${C.line}`,borderRadius:22,boxShadow:'0 12px 36px #23375008'};
 const Tag:React.FC<{children:React.ReactNode;color?:string}>=({children,color=C.cyan})=><span style={{display:'inline-flex',alignItems:'center',fontSize:21,fontWeight:650,color,background:color===C.amber?'#fff3df':C.pale,borderRadius:9,padding:'9px 15px'}}>{children}</span>;
 const Line:React.FC<{label:string;children:React.ReactNode;amber?:boolean}>=({label,children,amber})=><div style={{...panel,padding:'20px 25px',display:'flex',gap:24,alignItems:'center',marginBottom:14}}><div style={{fontSize:18,color:amber?C.amber:C.cyan,fontWeight:750,width:146,flexShrink:0}}>{label}</div><div style={{fontSize:27,lineHeight:1.4}}>{children}</div></div>;
-const Shell:React.FC<{lang:Lang;children:React.ReactNode;demo?:boolean}>=({lang,children,demo})=>{
+const Shell:React.FC<{lang:Lang;children:React.ReactNode;demo?:boolean;capture?:boolean}>=({lang,children,demo,capture})=>{
  const f=useCurrentFrame();const {durationInFrames}=useVideoConfig();
  return <AbsoluteFill style={{background:C.paper,color:C.ink,fontFamily:font}}>
   <div style={{position:'absolute',left:0,top:0,right:0,height:94,background:'white',borderBottom:`1px solid ${C.line}`,display:'flex',alignItems:'center',padding:'0 100px',justifyContent:'space-between'}}>
    <div style={{display:'flex',alignItems:'center',gap:18}}><div style={{width:45,height:45,background:C.cyan,borderRadius:13,color:'white',fontSize:25,fontWeight:800,display:'grid',placeItems:'center'}}>V</div><span style={{fontSize:30,fontWeight:750}}>VMware Skills</span></div>
-   <span style={{fontSize:18,letterSpacing:2,color:C.muted}}>{demo?tx(lang,'ILLUSTRATIVE DEMO · SYNTHETIC DATA','示意动画 · 合成数据'):tx(lang,'COMMUNITY OPEN SOURCE','社区开源项目')}</span>
+   <span style={{fontSize:18,letterSpacing:2,color:C.muted}}>{capture?tx(lang,'HISTORICAL SCREENSHOTS · REDACTED EXCERPTS','历史会话截图 · 已脱敏节选'):demo?tx(lang,'ILLUSTRATIVE DEMO · SYNTHETIC DATA','示意动画 · 合成数据'):tx(lang,'COMMUNITY OPEN SOURCE','社区开源项目')}</span>
   </div>{children}
   <div style={{position:'absolute',bottom:27,left:100,fontSize:17,color:C.muted}}>{tx(lang,'Community project · Not an official VMware / Broadcom product','社区项目 · 非 VMware / Broadcom 官方产品')}</div>
   <div style={{position:'absolute',bottom:27,right:100,fontSize:18,fontWeight:600,color:C.cyan}}>github.com/vmware-skills/marketplace</div>
@@ -53,9 +54,9 @@ const Scene:React.FC<{lang:Lang;scene:any}>=({lang,scene})=>{
  const frame=useCurrentFrame();const progress=Math.min(1,frame/scene.frames);const parts=captions(scene.speech);const total=parts.reduce((n,s)=>n+s.length,0);let cursor=0;const target=Math.min(1,frame/(scene.audioDuration*30))*total;const text=parts.find(s=>{cursor+=s.length;return target<=cursor;})||parts[parts.length-1];
  const enter=interpolate(frame,[0,12],[12,0],{extrapolateRight:'clamp'});
  return <><Heading title={scene.title} subtitle={scene.subtitle}/><div style={{position:'absolute',top:335,left:110,right:110,transform:`translateY(${enter}px)`}}>
- {scene.kind==='intro'?<IntroVisual lang={lang}/>:scene.kind==='architecture'?<Architecture lang={lang}/>:scene.kind==='demo'?<Demo lang={lang} progress={progress}/>:scene.kind==='evidence'?<Evidence lang={lang}/>:scene.kind==='workflow'?<Workflow lang={lang}/>:scene.kind==='start'?<Start lang={lang}/>:<Close lang={lang}/>}</div><Caption text={text.trim()}/><Html5Audio src={staticFile(scene.audio)}/></>;
+ {scene.kind==='recorded-inventory'?<RecordedInventory lang={lang}/>:scene.kind==='recorded-health'?<RecordedHealth lang={lang}/>:scene.kind==='recorded-audit'?<RecordedAudit lang={lang} progress={progress}/>:scene.kind==='intro'?<IntroVisual lang={lang}/>:scene.kind==='architecture'?<Architecture lang={lang}/>:scene.kind==='demo'?<Demo lang={lang} progress={progress}/>:scene.kind==='evidence'?<Evidence lang={lang}/>:scene.kind==='workflow'?<Workflow lang={lang}/>:scene.kind==='start'?<Start lang={lang}/>:<Close lang={lang}/>}</div><Caption text={text.trim()}/><Html5Audio src={staticFile(scene.audio)}/></>;
 };
-const Intro:React.FC<{lang:Lang}>=({lang})=>{const frame=useCurrentFrame();let n=0;const active=scenes[lang].find(s=>{n+=s.frames;return frame<n;});let start=0;return <Shell lang={lang} demo={active?.kind==='demo'||active?.kind==='evidence'}>{scenes[lang].map((scene,i)=>{const from=start;start+=scene.frames;return <Sequence key={i} from={from} durationInFrames={scene.frames}><Scene lang={lang} scene={scene}/></Sequence>;})}</Shell>;};
+const Intro:React.FC<{lang:Lang}>=({lang})=>{const frame=useCurrentFrame();let n=0;const active=scenes[lang].find(s=>{n+=s.frames;return frame<n;});let start=0;return <Shell lang={lang} demo={active?.kind==='demo'||active?.kind==='evidence'} capture={active?.kind.startsWith('recorded-')}>{scenes[lang].map((scene,i)=>{const from=start;start+=scene.frames;return <Sequence key={i} from={from} durationInFrames={scene.frames}><Scene lang={lang} scene={scene}/></Sequence>;})}</Shell>;};
 const ShortDemo:React.FC<{lang:Lang}>=({lang})=>{const frame=useCurrentFrame();const {durationInFrames}=useVideoConfig();return <Shell lang={lang} demo><Heading title={tx(lang,'Ask → inspect → follow the evidence','提问 → 查询 → 沿着证据调查')} subtitle={tx(lang,'Read-only health triage with VMware-Monitor','使用 VMware-Monitor 进行只读健康调查')}/><div style={{position:'absolute',top:335,left:110,right:110}}><Demo lang={lang} progress={frame/durationInFrames}/></div><Caption text={tx(lang,'Illustrative animation · synthetic data · no live infrastructure call','示意动画 · 合成数据 · 未调用真实基础设施')}/></Shell>;};
 const Root=()=> <>{(['en','zh'] as Lang[]).flatMap(lang=>[<Composition key={'intro-'+lang} id={'Intro-'+lang} component={Intro} defaultProps={{lang}} width={1920} height={1080} fps={30} durationInFrames={scenes[lang].reduce((n,s)=>n+s.frames,0)}/>,<Composition key={'demo-'+lang} id={'Demo-'+lang} component={ShortDemo} defaultProps={{lang}} width={1920} height={1080} fps={15} durationInFrames={270}/>])}</>;
 registerRoot(Root);
