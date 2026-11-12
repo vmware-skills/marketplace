@@ -4,7 +4,7 @@ import scenes from './scenes.json';
 
 type Lang = 'en' | 'zh';
 const C={ink:'#14243a',muted:'#64748b',cyan:'#0891b2',pale:'#e7f7fb',amber:'#d97706',line:'#dce5ef',paper:'#f5f8fc',green:'#13866e'};
-const font='"Avenir Next", "PingFang SC", "Microsoft YaHei", Arial, sans-serif';
+const font='"Avenir Next", "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif';
 const tx=(l:Lang,en:string,zh:string)=>l==='en'?en:zh;
 const panel:React.CSSProperties={background:'white',border:`1px solid ${C.line}`,borderRadius:22,boxShadow:'0 12px 36px #23375008'};
 const Tag:React.FC<{children:React.ReactNode;color?:string}>=({children,color=C.cyan})=><span style={{display:'inline-flex',alignItems:'center',fontSize:21,fontWeight:650,color,background:color===C.amber?'#fff3df':C.pale,borderRadius:9,padding:'9px 15px'}}>{children}</span>;
