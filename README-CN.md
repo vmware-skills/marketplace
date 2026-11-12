@@ -6,13 +6,13 @@ AI 辅助 VMware 运维：提一个问题，沿着证据调查，再规划下一
 
 **15 个 skill · 14 个 MCP server · 一个共享 Policy 库。** 社区维护，MIT 开源，非 VMware、Broadcom 或 Omnissa 官方产品。
 
-[![18 秒只读调查演示](assets/demos/vmware-skills-zh.gif)](assets/demos/vmware-skills-zh.mp4)
+[![18 秒只读调查演示](assets/demos/vmware-skills-zh.gif)](https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-12/vmware-skills-zh.mp4)
 
-**GIF 使用合成数据。** 配音视频还展示经过脱敏的历史调用截图节选，包括根据审计导出记录整理的助手汇总。各类素材均有标注；视频不是新的一次真机测试。中英文视频分别使用对应语言的截图，密集日志配有大字转录；建议以 1080p 查看表格细节。
+GIF 为合成数据；视频含脱敏的历史截图，详见[视频说明](assets/demos/README-CN.md)。
 
-[观看配音介绍（约 2 分钟）](assets/demos/vmware-skills-zh.mp4) · [下载字幕](assets/demos/vmware-skills-zh.srt)
+[下载配音介绍（约 2 分钟）](https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-12/vmware-skills-zh.mp4) · [下载字幕](assets/demos/vmware-skills-zh.srt)
 
-视频使用 AI 合成预设音色，并非维护者本人录音。如果项目对你有用，欢迎 **Star 这个家族门户**，帮助更多人发现它。
+如果项目对你有用，欢迎 **Star 这个家族门户**，帮助更多人发现它。
 
 ## 它能帮我做什么？
 
@@ -41,6 +41,13 @@ bash scripts/install-plugins.sh --all
 ```
 
 可先加 --dry-run 查看命令。不带 --all 时只安装 Monitor。脚本调用 Claude Code 的市场/插件安装命令，不跳过信任提示，也不是适用于任意 Agent 的通用安装器。安装全部模块会暴露更多工具，各模块仍需分别配置。
+
+</details>
+
+<details>
+<summary>Cursor、Codex、Gemini CLI、Cline 与本地模型宿主</summary>
+
+[宿主配置指南](docs/agent-hosts-CN.md) 提供可复制的 JSON/TOML 示例与配置位置，无需 Claude Code 插件市场。先在本机配置目标，再验证一次只读查询。
 
 </details>
 
@@ -76,7 +83,7 @@ Monitor 不修改 VMware 基础设施，但仍可能在本地写入配置、审�
 
 ## 演示、反馈与社区
 
-- [英文配音视频](assets/demos/vmware-skills-en.mp4) · [中文配音视频](assets/demos/vmware-skills-zh.mp4)
+- [英文配音视频](https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-12/vmware-skills-en.mp4) · [中文配音视频](https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-12/vmware-skills-zh.mp4)
 - [复现动画与配音素材](media/vmware-skills-demo/README.md)。
 - [反馈问题或建议](https://github.com/vmware-skills/marketplace/issues)；具体组件缺陷请提交到对应仓库。
 - GitHub：https://github.com/vmware-skills · MIT 许可。
