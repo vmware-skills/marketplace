@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-12",
+  "result_kind": "standalone_implementation_validation_not_model_measurement",
+  "python": "3.13.12",
+  "jsonschema": "4.26.0",
+  "unit_tests": {
+    "passed": 20,
+    "failed": 0
+  },
+  "standalone_without_mcp_or_vmware_packages": true,
+  "cli_roundtrip": [
+    "seal",
+    "prepare-relevant",
+    "prepare-all-353-tools",
+    "grade-authored-control",
+    "report-incomplete-as-not-measured",
+    "rubric-human-only"
+  ],
+  "model_or_appliance_calls": false,
+  "evaluator_sha256": "26a5ac71d5985c5165dc7620cdcd3f1fd673d41079b98748ec10ee2ce21d8cc1",
+  "protocol_sha256": "439c2a9c1fe3718642e3532c1dca31090c5ea837fb71cf365b63c4cd9eba9dd7",
+  "tool_snapshot_sha256": "93fc1c5670fedb8deaa944b100b8a6430cf36f148a275498d380bcf75173e1a9"
+}
