@@ -1,12 +1,12 @@
 {
   "generatedAt": "2026-11-12",
-  "renderRun": "https://github.com/vmware-skills/marketplace/actions/runs/43174501822",
-  "renderSourceCommit": "198edeeaa95e8188daa3ec2bfc6753ab532b277a",
+  "renderRun": "https://github.com/vmware-skills/marketplace/actions/runs/43178596419",
+  "renderSourceCommit": "3accd6d6641df43be06a95af2b08c12f47464d07",
   "narration": "AI-generated preset voices: en-US-AriaNeural and zh-CN-XiaoxiaoNeural",
-  "evidence": "Short GIFs: synthetic illustrative data. Introduction videos: labeled redacted historical inventory, health and assistant-prepared audit export excerpts; not a new live test.",
+  "evidence": "Short GIFs: synthetic. Introductions: separate English and Chinese historical screenshot excerpts plus labeled readable transcripts; audit views are assistant-prepared summaries, not raw database evidence or new live tests.",
   "durationsSeconds": {
     "en": 130.581,
-    "zh": 127.317
+    "zh": 126.4
   },
   "gif": {
     "seconds": 18,
@@ -32,8 +32,8 @@
     },
     {
       "file": "assets/demos/vmware-skills-en.mp4",
-      "bytes": 7443113,
-      "sha256": "5940878f5e6296bbf6fd6e2efefcc2cc4aadc33eb08a4d4fa1f67eddb99404aa"
+      "bytes": 8195535,
+      "sha256": "f76c74ad9b00d4a3a0f7d1fafe4f7abaabce825fa62e8b235cd1cde45d55b488"
     },
     {
       "file": "assets/demos/vmware-skills-en.srt",
@@ -47,35 +47,78 @@
     },
     {
       "file": "assets/demos/vmware-skills-zh.mp4",
-      "bytes": 7016829,
-      "sha256": "6b809379a4a1d3b0eb90147865905998306d085e4579c710843f918d8f4f54c4"
+      "bytes": 7696193,
+      "sha256": "2ba453be333036e4ec998aa9d5290728d67ea4af7f2df5a8b045221db5a32b54"
     },
     {
       "file": "assets/demos/vmware-skills-zh.srt",
-      "bytes": 2362,
-      "sha256": "5688ef52308711db33d0859181c036fca82f04b22de20ad666bb63a23967c489"
+      "bytes": 2369,
+      "sha256": "4e9c2eadeb6892409508a502fe4e1b766368cc164433fe27bc8235bb248522a7"
     }
   ],
   "captureExcerpts": [
     {
-      "file": "media/vmware-skills-demo/public/captures/audit-bottom.mp4",
-      "bytes": 41096,
-      "sha256": "32169d04d858ed052cc624120d15d4ed5df8a161a3c8b72600c49d2915775f61"
+      "file": "media/vmware-skills-demo/public/captures/en-inventory.mp4",
+      "bytes": 64687,
+      "sha256": "51777cbbfc7313cbb9e9adcaddc31f3718fbe6c7371b19a4ee5af3ab058de43a"
     },
     {
-      "file": "media/vmware-skills-demo/public/captures/audit-top.mp4",
-      "bytes": 39021,
-      "sha256": "2e9c9e5f41bf7f42c22b220766f590e6dedf8a9adec7ecf02e079e14b4b81c3a"
+      "file": "media/vmware-skills-demo/public/captures/en-health.mp4",
+      "bytes": 49323,
+      "sha256": "9d7a0d08c1c8dd71520fe6f984751daf137b13ff2e6c347c9bde2684c644c7d1"
     },
     {
-      "file": "media/vmware-skills-demo/public/captures/health.mp4",
-      "bytes": 18820,
-      "sha256": "516cb9d1b118ab1aed961c74e3d0fb0300726002cd2011e3c210995f10871332"
+      "file": "media/vmware-skills-demo/public/captures/zh-question.mp4",
+      "bytes": 10865,
+      "sha256": "3a6500ffcf98e8264d762bf8efadf39c77e7a28d6c5e85b6b9dcb354ed694e6e"
     },
     {
-      "file": "media/vmware-skills-demo/public/captures/inventory.mp4",
-      "bytes": 22447,
-      "sha256": "043aa52e0e44a21bee37c5536e737191db5bda2ba0dba8504028804daf30b477"
+      "file": "media/vmware-skills-demo/public/captures/zh-inventory.mp4",
+      "bytes": 5142,
+      "sha256": "898386049a4544ed6ca7ebccf8a8cc0ead57ceb37f396fc2da26d8eb70f6e1cc"
+    },
+    {
+      "file": "media/vmware-skills-demo/public/captures/zh-health.mp4",
+      "bytes": 31767,
+      "sha256": "838f07d18a03fd643d28571f1591a4d6de212850ce4539fe3596510a895e8ed6"
+    },
+    {
+      "file": "media/vmware-skills-demo/public/captures/en-audit-0.mp4",
+      "bytes": 90634,
+      "sha256": "49d34dfe45ec7990f31fd20f39da8052c79e5a5c7c9355529145d83cde11e896"
+    },
+    {
+      "file": "media/vmware-skills-demo/public/captures/en-audit-1.mp4",
+      "bytes": 98075,
+      "sha256": "eb7b5a4f2f8de72ee285d9e71456e67e94af7fbd57cc6719c7f5c0d46e4d6c5f"
+    },
+    {
+      "file": "media/vmware-skills-demo/public/captures/en-audit-2.mp4",
+      "bytes": 76747,
+      "sha256": "6431aa7c99a87e2a236049f5ee49550dfffe1619cb4c09a3573ab71f2672e067"
+    },
+    {
+      "file": "media/vmware-skills-demo/public/captures/zh-audit-0.mp4",
+      "bytes": 28122,
+      "sha256": "7859240b4c1298b22f0921a498b026b17d5fae20d381c44faf0557f67081a3c9"
+    },
+    {
+      "file": "media/vmware-skills-demo/public/captures/zh-audit-1.mp4",
+      "bytes": 29065,
+      "sha256": "647073a96e63e6da3227ca0d968832396de41dbaa4b838d995f5cbd0522091a8"
+    },
+    {
+      "file": "media/vmware-skills-demo/public/captures/zh-audit-2.mp4",
+      "bytes": 26053,
+      "sha256": "9bef5a7853a4f6ed39d2b262f9911fa24f49151e7c0b101ce18c643b769b5118"
     }
-  ]
+  ],
+  "captureQuality": {
+    "sourceClips": "lossless native RGB; decoded pixels equal selected source crop",
+    "introductionCRF": 16,
+    "auditPagesPerLanguage": 3,
+    "englishAuditRows": 14,
+    "chineseAuditRows": 15,
+    "originalDetail": "Limited by source resolution; no detail synthesis"
+  }
 }
