@@ -8,7 +8,7 @@ AI 辅助 VMware 运维：提一个问题，沿着证据调查，再规划下一
 
 [![18 秒只读调查演示](assets/demos/vmware-skills-zh.gif)](assets/demos/vmware-skills-zh.mp4)
 
-**GIF 使用合成数据。** 配音视频还展示经过脱敏的历史调用截图节选，包括根据审计导出记录整理的助手汇总。各类素材均有标注；视频不是新的一次真机测试。
+**GIF 使用合成数据。** 配音视频还展示经过脱敏的历史调用截图节选，包括根据审计导出记录整理的助手汇总。各类素材均有标注；视频不是新的一次真机测试。中英文视频分别使用对应语言的截图，密集日志配有大字转录；建议以 1080p 查看表格细节。
 
 [观看配音介绍（约 2 分钟）](assets/demos/vmware-skills-zh.mp4) · [下载字幕](assets/demos/vmware-skills-zh.srt)
 

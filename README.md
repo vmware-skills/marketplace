@@ -8,7 +8,7 @@ English · [简体中文](README-CN.md)
 
 [![18-second read-only investigation demo](assets/demos/vmware-skills-en.gif)](assets/demos/vmware-skills-en.mp4)
 
-**The GIF uses synthetic data.** The narrated video also shows redacted excerpts from historical usage screenshots, including an assistant-prepared summary of exported audit records. Each source type is labeled; the video is not a new live test.
+**The GIF uses synthetic data.** The narrated video also shows redacted excerpts from historical usage screenshots, including an assistant-prepared summary of exported audit records. Each source type is labeled; the video is not a new live test. English and Chinese videos use matching-language captures, with enlarged transcripts for dense logs. Watch at 1080p for table detail.
 
 [Watch the narrated introduction (~2 minutes)](assets/demos/vmware-skills-en.mp4) · [Download captions](assets/demos/vmware-skills-en.srt)
 
