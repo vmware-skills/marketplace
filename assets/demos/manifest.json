@@ -1,12 +1,12 @@
 {
   "generatedAt": "2026-11-12",
-  "renderRun": "https://github.com/vmware-skills/marketplace/actions/runs/43146603847",
-  "renderSourceCommit": "376509f0eb294e60a8f444fdf03ca1b54363ee33",
+  "renderRun": "https://github.com/vmware-skills/marketplace/actions/runs/43174501822",
+  "renderSourceCommit": "198edeeaa95e8188daa3ec2bfc6753ab532b277a",
   "narration": "AI-generated preset voices: en-US-AriaNeural and zh-CN-XiaoxiaoNeural",
-  "evidence": "Illustrative animation and synthetic records; not a live infrastructure recording",
+  "evidence": "Short GIFs: synthetic illustrative data. Introduction videos: labeled redacted historical inventory, health and assistant-prepared audit export excerpts; not a new live test.",
   "durationsSeconds": {
-    "en": 129.045,
-    "zh": 121.301
+    "en": 130.581,
+    "zh": 127.317
   },
   "gif": {
     "seconds": 18,
@@ -32,13 +32,13 @@
     },
     {
       "file": "assets/demos/vmware-skills-en.mp4",
-      "bytes": 7142674,
-      "sha256": "40776d960c277c325a57ad0e040d798c1f8f5082208820ecbac479b03c00c815"
+      "bytes": 7443113,
+      "sha256": "5940878f5e6296bbf6fd6e2efefcc2cc4aadc33eb08a4d4fa1f67eddb99404aa"
     },
     {
       "file": "assets/demos/vmware-skills-en.srt",
-      "bytes": 2624,
-      "sha256": "119d7e3168050b9ae13cd9d6bd7bd362da4bb6b468724d36ef770b8d63a37dd4"
+      "bytes": 2614,
+      "sha256": "0200b13eb8a52775c7f25128e2d471a0bff819a0a6f1671dcc493625909f0362"
     },
     {
       "file": "assets/demos/vmware-skills-zh.gif",
@@ -47,13 +47,35 @@
     },
     {
       "file": "assets/demos/vmware-skills-zh.mp4",
-      "bytes": 6541212,
-      "sha256": "506730c8d43e71651cc4c140cd7cb418717708543b94d01ba4e0733159c78636"
+      "bytes": 7016829,
+      "sha256": "6b809379a4a1d3b0eb90147865905998306d085e4579c710843f918d8f4f54c4"
     },
     {
       "file": "assets/demos/vmware-skills-zh.srt",
-      "bytes": 2224,
-      "sha256": "38b3316aa6bd7d83c94afdeca484e2c9cc4e2b2037f4492ddf0d8d8cee03dee9"
+      "bytes": 2362,
+      "sha256": "5688ef52308711db33d0859181c036fca82f04b22de20ad666bb63a23967c489"
+    }
+  ],
+  "captureExcerpts": [
+    {
+      "file": "media/vmware-skills-demo/public/captures/audit-bottom.mp4",
+      "bytes": 41096,
+      "sha256": "32169d04d858ed052cc624120d15d4ed5df8a161a3c8b72600c49d2915775f61"
+    },
+    {
+      "file": "media/vmware-skills-demo/public/captures/audit-top.mp4",
+      "bytes": 39021,
+      "sha256": "2e9c9e5f41bf7f42c22b220766f590e6dedf8a9adec7ecf02e079e14b4b81c3a"
+    },
+    {
+      "file": "media/vmware-skills-demo/public/captures/health.mp4",
+      "bytes": 18820,
+      "sha256": "516cb9d1b118ab1aed961c74e3d0fb0300726002cd2011e3c210995f10871332"
+    },
+    {
+      "file": "media/vmware-skills-demo/public/captures/inventory.mp4",
+      "bytes": 22447,
+      "sha256": "043aa52e0e44a21bee37c5536e737191db5bda2ba0dba8504028804daf30b477"
     }
   ]
 }
