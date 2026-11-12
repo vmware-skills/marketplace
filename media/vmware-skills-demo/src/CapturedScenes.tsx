@@ -9,12 +9,13 @@ const Label:React.FC<{children:React.ReactNode}>=({children})=><div style={{font
 export const RecordedInventory:React.FC<{lang:Lang}>=({lang})=><div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:28}}>
  <div style={{...panel,minHeight:440}}><Label>{t(lang,'Historical screenshot excerpt','中文历史截图节选')}</Label>{lang==='en'?<Excerpt name="en-inventory" style={{width:603,height:400.5,margin:'0 auto'}}/>:<>
   <div style={{fontSize:28,marginBottom:18}}>场景：查询虚拟机清单</div>
-  <Excerpt name="zh-question" style={{width:620,height:27,margin:'0 auto 35px'}}/>
+  <Excerpt name="zh-question" style={{width:620,height:27,margin:'0 auto 18px'}}/>
+  <div style={{fontSize:25,lineHeight:1.6,marginBottom:24}}><span style={{fontSize:19,color:"#0891b2",fontWeight:700}}>原提问转录</span><br/>只用 VMware 的 skill 来做环境的运维，每次返回用了哪些 skill，不要自己写脚本来做。</div>
   <Excerpt name="zh-inventory" style={{width:660,height:28,margin:'0 auto 30px'}}/>
   <div style={{fontSize:23,lineHeight:1.7,color:'#64748b'}}>保留中文会话里的原始返回。<br/>主机地址和虚拟机名称未展示。</div>
  </>}</div>
  <div style={{...panel}}><Label>{t(lang,'Readable transcript · selected values','大字转录 · 所选数值')}</Label><div style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:14,margin:'30px 0'}}>{[['13',t(lang,'VMs returned','虚拟机')],['6',t(lang,'Powered on','运行中')],['7',t(lang,'Powered off','已关机')]].map(([n,label])=><div key={label} style={{padding:'30px 18px',background:'#e7f7fb',borderRadius:15}}><div style={{fontSize:64,fontWeight:750,color:'#0891b2'}}>{n}</div><div style={{fontSize:28,marginTop:18}}>{label}</div></div>)}</div>
- <div style={{fontSize:28,lineHeight:1.65}}>{t(lang,'Recorded query scope. Verify today’s inventory separately.','这是当时查询范围内的结果。当前环境需重新查询核对。')}</div>
+ <div style={{fontSize:28,lineHeight:1.65}}>{t(lang,'Recorded query scope. Verify current inventory separately.','这是当时查询范围内的结果。当前环境需重新查询核对。')}</div>
  </div>
 </div>;
 export const RecordedHealth:React.FC<{lang:Lang}>=({lang})=><div style={panel}>
