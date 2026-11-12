@@ -25,7 +25,17 @@ PY
 )"
 if ! "$dry"; then
   command -v claude >/dev/null || { echo 'Install Claude Code before running this helper.' >&2; exit 1; }
-  claude plugin marketplace add vmware-skills/marketplace
+  state="$(claude plugin marketplace list --json | python3 -c '
+import json,sys
+data=json.load(sys.stdin)
+if not isinstance(data,list):raise SystemExit("Unexpected marketplace list response")
+entries=[x for x in data if isinstance(x,dict) and x.get("name")=="vmware-skills"]
+if len(entries)>1:raise SystemExit("Duplicate vmware-skills marketplace names")
+if entries and (entries[0].get("source")!="github" or entries[0].get("repo")!="vmware-skills/marketplace"):
+    raise SystemExit("Existing vmware-skills marketplace has a different source; review its configuration")
+print("present" if entries else "absent")
+')"
+  if [[ "$state" == absent ]]; then claude plugin marketplace add vmware-skills/marketplace; fi
 else
   echo 'claude plugin marketplace add vmware-skills/marketplace'
 fi
