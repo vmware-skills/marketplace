@@ -2,7 +2,7 @@
 
 AI 辅助 VMware 运维：提一个问题，沿着证据调查，再规划下一步。从只读 Monitor 开始，按需增加专业模块。
 
-English · [简体中文](README-CN.md)
+[English](README.md) · 简体中文
 
 **15 个 skill · 14 个 MCP server · 一个共享 Policy 库。** 社区维护，MIT 开源，非 VMware、Broadcom 或 Omnissa 官方产品。
 
