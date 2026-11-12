@@ -1,0 +1,59 @@
+{
+  "generatedAt": "2026-11-12",
+  "renderRun": "https://github.com/vmware-skills/marketplace/actions/runs/43146603847",
+  "renderSourceCommit": "376509f0eb294e60a8f444fdf03ca1b54363ee33",
+  "narration": "AI-generated preset voices: en-US-AriaNeural and zh-CN-XiaoxiaoNeural",
+  "evidence": "Illustrative animation and synthetic records; not a live infrastructure recording",
+  "durationsSeconds": {
+    "en": 129.045,
+    "zh": 121.301
+  },
+  "gif": {
+    "seconds": 18,
+    "width": 960,
+    "height": 540,
+    "frames": 144
+  },
+  "files": [
+    {
+      "file": "assets/demos/poster-en.png",
+      "bytes": 83930,
+      "sha256": "76eed4f40e85e5269765fb1e214e99e0c037637754151cfa56d0f20586049e19"
+    },
+    {
+      "file": "assets/demos/poster-zh.png",
+      "bytes": 84036,
+      "sha256": "546db6a6cf75a3ac621bd1595f0b318f2c6affd837d371befa270bd093f22dff"
+    },
+    {
+      "file": "assets/demos/vmware-skills-en.gif",
+      "bytes": 348312,
+      "sha256": "72fb3d32123008cbb9ede8f40bbb99257e3e965a12d3f5637f2c1aa41afff68f"
+    },
+    {
+      "file": "assets/demos/vmware-skills-en.mp4",
+      "bytes": 7142674,
+      "sha256": "40776d960c277c325a57ad0e040d798c1f8f5082208820ecbac479b03c00c815"
+    },
+    {
+      "file": "assets/demos/vmware-skills-en.srt",
+      "bytes": 2624,
+      "sha256": "119d7e3168050b9ae13cd9d6bd7bd362da4bb6b468724d36ef770b8d63a37dd4"
+    },
+    {
+      "file": "assets/demos/vmware-skills-zh.gif",
+      "bytes": 288551,
+      "sha256": "8e47cb5d9874b20ea215970b306b12247c2a33aeb7e3109d431fb37f2ccd828e"
+    },
+    {
+      "file": "assets/demos/vmware-skills-zh.mp4",
+      "bytes": 6541212,
+      "sha256": "506730c8d43e71651cc4c140cd7cb418717708543b94d01ba4e0733159c78636"
+    },
+    {
+      "file": "assets/demos/vmware-skills-zh.srt",
+      "bytes": 2224,
+      "sha256": "38b3316aa6bd7d83c94afdeca484e2c9cc4e2b2037f4492ddf0d8d8cee03dee9"
+    }
+  ]
+}

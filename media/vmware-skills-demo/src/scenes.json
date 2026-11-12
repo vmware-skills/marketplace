@@ -1,0 +1,132 @@
+{
+  "en": [
+    {
+      "title": "Ask a question. Follow the evidence.",
+      "subtitle": "VMware Skills · AI-assisted infrastructure operations",
+      "speech": "What needs attention in your VMware environment? VMware Skills connects an AI assistant to focused skills and MCP tools, helping engineers investigate infrastructure and plan their next steps.",
+      "kind": "intro",
+      "audio": "audio/en-00.mp3",
+      "audioDuration": 12.888,
+      "frames": 429
+    },
+    {
+      "title": "One family. Focused responsibilities.",
+      "subtitle": "15 skills · 14 MCP servers · shared Policy library",
+      "speech": "The family covers vSphere, networking, storage, observability and more. Pilot coordinates workflows. Domain servers connect to their management systems. Policy provides shared checks, sanitization and audit logging. Start with the read-only Monitor.",
+      "kind": "architecture",
+      "audio": "audio/en-01.mp3",
+      "audioDuration": 18.72,
+      "frames": 604
+    },
+    {
+      "title": "From a question to a focused investigation.",
+      "subtitle": "Illustrative animation · synthetic environment",
+      "speech": "Here is an illustrative example using synthetic data. Ask what needs attention. Monitor returns observations about snapshots and storage. The assistant separates measured facts from missing evidence, then suggests the next checks. No infrastructure changes are made.",
+      "kind": "demo",
+      "audio": "audio/en-02.mp3",
+      "audioDuration": 18.888,
+      "frames": 609
+    },
+    {
+      "title": "Make uncertainty visible.",
+      "subtitle": "Observed facts · evidence gaps · next checks",
+      "speech": "An old snapshot is an observation. Future capacity is unknown without trend data. A report should preserve that difference. Local configuration, audit logs and exported reports can still write files, even when infrastructure access is read-only.",
+      "kind": "evidence",
+      "audio": "audio/en-03.mp3",
+      "audioDuration": 17.616,
+      "frames": 571
+    },
+    {
+      "title": "Plan changes with explicit boundaries.",
+      "subtitle": "Assess → review → execute → verify",
+      "speech": "When changes are needed, use the relevant domain skill and a reviewed workflow. Existing VMware permissions and local policy still apply. Destructive tools use preview and confirmation gates. A confirmation flag is not independent human approval, and rollback is best effort.",
+      "kind": "workflow",
+      "audio": "audio/en-04.mp3",
+      "audioDuration": 18.696,
+      "frames": 603
+    },
+    {
+      "title": "Start small. Run locally.",
+      "subtitle": "Choose Monitor first · add modules when needed",
+      "speech": "Use the family portal to choose a module and an installation method. Configure targets and credentials locally. Begin with a read-only task and validate your model and agent host. Add other skills only as your workflow needs them.",
+      "kind": "start",
+      "audio": "audio/en-05.mp3",
+      "audioDuration": 15.456,
+      "frames": 506
+    },
+    {
+      "title": "Make everyday operations a little easier.",
+      "subtitle": "Explore · try a read-only task · share feedback",
+      "speech": "VMware Skills is a community open-source project, not an official VMware or Broadcom product. Explore the demos, try a read-only task, and share what works or what needs improvement. If it helps your work, star the family portal to help others find it.",
+      "kind": "close",
+      "audio": "audio/en-06.mp3",
+      "audioDuration": 16.872,
+      "frames": 549
+    }
+  ],
+  "zh": [
+    {
+      "title": "问一个问题，沿着证据调查。",
+      "subtitle": "VMware Skills · AI 辅助基础设施运维",
+      "speech": "你的 VMware 环境，现在最需要关注什么？VMware Skills 把人工智能助手与专业技能和 MCP 工具连接起来，帮助工程师调查基础设施，找到下一步。",
+      "kind": "intro",
+      "audio": "audio/zh-00.mp3",
+      "audioDuration": 13.824,
+      "frames": 457
+    },
+    {
+      "title": "一个家族，明确分工。",
+      "subtitle": "15 个 skill · 14 个 MCP server · 共享 Policy 库",
+      "speech": "整个家族覆盖计算、网络、存储和可观测性。Pilot 编排工作流，领域服务连接各自的管理系统，Policy 提供共享策略检查、文本清洗和审计。建议从只读 Monitor 开始。",
+      "kind": "architecture",
+      "audio": "audio/zh-01.mp3",
+      "audioDuration": 16.08,
+      "frames": 525
+    },
+    {
+      "title": "从一句提问，到一次有重点的调查。",
+      "subtitle": "示意动画 · 合成环境数据",
+      "speech": "来看一段使用合成数据的示意演示。询问现在最需要关注什么，Monitor 返回快照和存储的观测。助手区分已测量的事实与证据缺口，再给出下一步检查建议。整个场景不修改基础设施。",
+      "kind": "demo",
+      "audio": "audio/zh-02.mp3",
+      "audioDuration": 17.28,
+      "frames": 561
+    },
+    {
+      "title": "把不确定性留在结果里。",
+      "subtitle": "观测事实 · 证据缺口 · 下一步检查",
+      "speech": "快照存在多久，是一条观测；没有历史趋势，就不能推断容量何时耗尽。报告需要保留这种区别。基础设施访问只读，也仍然可能在本机写入配置、审计和导出的报告。",
+      "kind": "evidence",
+      "audio": "audio/zh-03.mp3",
+      "audioDuration": 15.72,
+      "frames": 514
+    },
+    {
+      "title": "需要变更时，先明确边界。",
+      "subtitle": "评估 → 复核 → 执行 → 验证",
+      "speech": "需要变更时，再选择对应领域技能和经过复核的工作流。VMware 原有权限与本地策略继续生效。破坏性工具有预览和确认门，但确认参数并不等于独立人工审批，回滚也只能尽力执行。",
+      "kind": "workflow",
+      "audio": "audio/zh-04.mp3",
+      "audioDuration": 17.64,
+      "frames": 572
+    },
+    {
+      "title": "从小任务开始，在本地运行。",
+      "subtitle": "先选择 Monitor，再按需增加模块",
+      "speech": "在家族门户选择模块和安装方式，把目标与凭据配置在本地。从一个只读任务开始，验证你的模型和 Agent 宿主，再按实际工作流增加其他技能。",
+      "kind": "start",
+      "audio": "audio/zh-05.mp3",
+      "audioDuration": 13.68,
+      "frames": 453
+    },
+    {
+      "title": "让日常运维，轻松一点。",
+      "subtitle": "了解项目 · 试一个只读任务 · 分享反馈",
+      "speech": "VMware Skills 是社区开源项目，并非 VMware 或 Broadcom 官方产品。欢迎查看演示，试一个只读任务，分享有效的经验与需要改进的地方。如果它对你有用，也欢迎为家族门户点一颗星。",
+      "kind": "close",
+      "audio": "audio/zh-06.mp3",
+      "audioDuration": 17.16,
+      "frames": 557
+    }
+  ]
+}

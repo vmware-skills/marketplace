@@ -1,0 +1,107 @@
+1
+00:00:00,000 --> 00:00:03,222
+What needs attention in your VMware environment?
+
+2
+00:00:03,222 --> 00:00:12,888
+VMware Skills connects an AI assistant to focused skills and MCP tools, helping engineers investigate infrastructure and plan their next steps.
+
+3
+00:00:14,300 --> 00:00:19,638
+The family covers vSphere, networking, storage, observability and more.
+
+4
+00:00:19,638 --> 00:00:21,818
+Pilot coordinates workflows.
+
+5
+00:00:21,818 --> 00:00:25,727
+Domain servers connect to their management systems.
+
+6
+00:00:25,727 --> 00:00:30,464
+Policy provides shared checks, sanitization and audit logging.
+
+7
+00:00:30,464 --> 00:00:33,020
+Start with the read-only Monitor.
+
+8
+00:00:34,433 --> 00:00:38,197
+Here is an illustrative example using synthetic data.
+
+9
+00:00:38,197 --> 00:00:40,043
+Ask what needs attention.
+
+10
+00:00:40,043 --> 00:00:44,161
+Monitor returns observations about snapshots and storage.
+
+11
+00:00:44,161 --> 00:00:50,765
+The assistant separates measured facts from missing evidence, then suggests the next checks.
+
+12
+00:00:50,765 --> 00:00:53,321
+No infrastructure changes are made.
+
+13
+00:00:54,733 --> 00:00:57,178
+An old snapshot is an observation.
+
+14
+00:00:57,178 --> 00:01:00,557
+Future capacity is unknown without trend data.
+
+15
+00:01:00,557 --> 00:01:03,577
+A report should preserve that difference.
+
+16
+00:01:03,577 --> 00:01:12,349
+Local configuration, audit logs and exported reports can still write files, even when infrastructure access is read-only.
+
+17
+00:01:13,767 --> 00:01:19,138
+When changes are needed, use the relevant domain skill and a reviewed workflow.
+
+18
+00:01:19,138 --> 00:01:23,081
+Existing VMware permissions and local policy still apply.
+
+19
+00:01:23,081 --> 00:01:26,752
+Destructive tools use preview and confirmation gates.
+
+20
+00:01:26,752 --> 00:01:32,463
+A confirmation flag is not independent human approval, and rollback is best effort.
+
+21
+00:01:33,867 --> 00:01:38,436
+Use the family portal to choose a module and an installation method.
+
+22
+00:01:38,436 --> 00:01:41,326
+Configure targets and credentials locally.
+
+23
+00:01:41,326 --> 00:01:45,895
+Begin with a read-only task and validate your model and agent host.
+
+24
+00:01:45,895 --> 00:01:49,323
+Add other skills only as your workflow needs them.
+
+25
+00:01:50,733 --> 00:01:56,960
+VMware Skills is a community open-source project, not an official VMware or Broadcom product.
+
+26
+00:01:56,960 --> 00:02:02,919
+Explore the demos, try a read-only task, and share what works or what needs improvement.
+
+27
+00:02:02,919 --> 00:02:07,605
+If it helps your work, star the family portal to help others find it.

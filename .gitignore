@@ -1,0 +1,5 @@
+media/**/node_modules/
+media/**/.cache/
+media/**/build/
+media/**/out/
+.DS_Store
