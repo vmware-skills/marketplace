@@ -6,6 +6,8 @@ procedure and the tools.
 
 To check a model and agent host against your own read-only VMware task, use the shared [model-fit self-test](MODEL_FIT_SELF_TEST.md) in this repository root.
 
+For an offline task template usable with any small model, start with the [60 synthetic assessment tasks](model-fit/README.md) ([中文](model-fit/README-CN.md)) and [judgment results](model-fit/results/README.md). No VMware connection is required; proposed actions are never executed.
+
 ```
 /plugin marketplace add vmware-skills/marketplace
 /plugin install vmware-monitor@vmware-skills

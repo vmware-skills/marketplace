@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "status": "not_measured",
+  "evaluation_mode": "static_task_template",
+  "results": [],
+  "reason": "No actual candidate model responses have been collected. Grader controls are stored separately and are not model results.",
+  "last_updated": "2026-11-12"
+}

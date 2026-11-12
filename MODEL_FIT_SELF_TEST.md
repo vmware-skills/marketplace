@@ -4,6 +4,8 @@ Use this shared, opt-in task to check whether **your agent, model, installed VMw
 
 This is a manual validation task, not a certification, model leaderboard, permission gate, or production write test. The VMware account's RBAC, the skill's Policy guard, and any confirmation requirement still apply. A passing model can fail on another task, host, tool version, or target version.
 
+For a model-independent offline exercise before connecting to a lab, use the [standalone task templates](model-fit/README.md) and [results directory](model-fit/results/README.md). These assess proposed calls and synthetic evidence reasoning, separately from the real host/skill self-test below.
+
 ## Before you start
 
 1. Install and configure the skill you want to test. Use a dedicated read-only VMware account wherever the product supports one. Use a lab target if possible.
