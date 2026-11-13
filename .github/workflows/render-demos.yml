@@ -36,7 +36,7 @@ jobs:
           mkdir -p out
           npx remotion render src/index.tsx Intro-${{ matrix.language }} out/vmware-skills-${{ matrix.language }}.mp4 --codec=h264 --crf=16 --concurrency=4
           npx remotion render src/index.tsx Demo-${{ matrix.language }} out/demo-${{ matrix.language }}.mp4 --codec=h264 --scale=0.5 --crf=22 --concurrency=4
-          npx remotion still src/index.tsx Demo-${{ matrix.language }} out/poster-${{ matrix.language }}.png --frame=200 --scale=0.5
+          npx remotion still src/index.tsx Demo-${{ matrix.language }} out/poster-${{ matrix.language }}.png --frame=300 --scale=0.5
       - name: Encode README GIF
         run: |
           ffmpeg -y -i out/demo-${{ matrix.language }}.mp4 -filter_complex "[0:v]fps=8,split[a][b];[a]palettegen=max_colors=128[p];[b][p]paletteuse=dither=bayer:bayer_scale=4" -loop 0 out/vmware-skills-${{ matrix.language }}.gif

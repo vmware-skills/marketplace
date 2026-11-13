@@ -17,3 +17,12 @@ Frame timing follows measured audio durations in src/scenes.json. Narration scri
 The narrative follows the generic presentation structure: architecture, focused domains, evidence boundaries, workflows and local setup. Current code contracts supersede old slide tool counts, independent-approval claims and unverified compatibility claims. No customer-specific deck, endpoint, credential or live-environment identity is embedded.
 
 Publish generated introduction MP4s as GitHub Release assets after review; update `assets/demos/manifest.json` with their URLs and checksums. Do not commit generated introduction MP4s. Small sanitized capture clips in `public/captures/` remain versioned render inputs.
+
+## Model selection segment (2026-11-13)
+
+The 24-second GIF has two halves: read-only synthetic triage, then the shared model-fit workflow.
+The narrated introduction adds a model-selection chapter before the historical audit segment.
+It shows ten synthetic final tasks × five attempts, automatic checks plus human review, and
+the smallest tested passing configuration per task group. There are no model scores in this
+animation; it is not a live model run, native tool-call test or production recommendation.
+English/Chinese guides are in `../../model-fit/RUNNER.md` and `RUNNER-CN.md`.

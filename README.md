@@ -6,11 +6,11 @@ English · [简体中文](README-CN.md)
 
 **15 skills · 14 MCP servers · one shared Policy library.** Community-maintained, MIT-licensed, and not an official VMware, Broadcom or Omnissa product.
 
-[![18-second read-only investigation demo](assets/demos/vmware-skills-en.gif)](https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-12/vmware-skills-en.mp4)
+[![24-second read-only investigation demo](assets/demos/vmware-skills-en.gif)](https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-13-model-fit/vmware-skills-en.mp4)
 
 GIF: synthetic data. Videos: redacted historical screenshots. [Video notes](assets/demos/README.md).
 
-[Download the narrated introduction (~2 minutes)](https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-12/vmware-skills-en.mp4) · [Download captions](assets/demos/vmware-skills-en.srt)
+[Download the narrated introduction (~3 minutes)](https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-13-model-fit/vmware-skills-en.mp4) · [Download captions](assets/demos/vmware-skills-en.srt)
 
 If the project helps your work, **star this family portal** so others can find it.
 
@@ -81,11 +81,11 @@ Monitor does not mutate VMware infrastructure. It can still write local configur
 
 Use the shared [model-fit self-test](MODEL_FIT_SELF_TEST.md) to validate a read-only task with your model and agent host. Scope and real-environment compatibility are recorded in each component’s documentation; availability of a package or a demo is not a live-platform validation claim.
 
-Compare model sizes and quality with the standalone [model-fit test kit](model-fit/README.md); it collects synthetic answers and produces per-task configuration comparisons.
+Choose a model with the [shared model-fit workflow](https://github.com/vmware-skills/marketplace/blob/main/model-fit/RUNNER.md): compare the same tasks, review quality and safety, then select the smallest tested passing configuration per task group; this is not a production guarantee.
 
 ## Demos, feedback and community
 
-- [English narrated video](https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-12/vmware-skills-en.mp4) · [Chinese narrated video](https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-12/vmware-skills-zh.mp4)
+- [English narrated video](https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-13-model-fit/vmware-skills-en.mp4) · [Chinese narrated video](https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-13-model-fit/vmware-skills-zh.mp4)
 - [Reproduce the animations and audio](media/vmware-skills-demo/README.md).
 - [Share an issue or suggestion](https://github.com/vmware-skills/marketplace/issues). Component bugs belong in the relevant component repository.
 - GitHub: https://github.com/vmware-skills · MIT license.

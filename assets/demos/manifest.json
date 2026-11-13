@@ -1,49 +1,49 @@
 {
-  "generatedAt": "2026-11-12",
-  "renderRun": "https://github.com/vmware-skills/marketplace/actions/runs/43178596419",
-  "renderSourceCommit": "3accd6d6641df43be06a95af2b08c12f47464d07",
+  "generatedAt": "2026-11-13",
+  "renderRun": "https://github.com/vmware-skills/marketplace/actions/runs/43350659779",
+  "renderSourceCommit": "06933b54380bdfb98e15da88f9ad68a0b7828c5e",
   "narration": "AI-generated preset voices: en-US-AriaNeural and zh-CN-XiaoxiaoNeural",
-  "evidence": "Short GIFs: synthetic. Introductions: separate English and Chinese historical screenshot excerpts plus labeled readable transcripts; audit views are assistant-prepared summaries, not raw database evidence or new live tests.",
+  "evidence": "Short GIFs: synthetic triage plus model-fit workflow. Introductions: separate English/Chinese historical screenshots and labeled readable transcripts, plus synthetic model-selection workflow. No actual model scores or new live tests.",
   "durationsSeconds": {
-    "en": 130.581,
-    "zh": 126.4
+    "en": 167.915,
+    "zh": 161.237
   },
   "gif": {
-    "seconds": 18,
+    "seconds": 24,
     "width": 960,
     "height": 540,
-    "frames": 144
+    "frames": 192
   },
   "files": [
     {
       "file": "assets/demos/poster-en.png",
-      "bytes": 83930,
-      "sha256": "76eed4f40e85e5269765fb1e214e99e0c037637754151cfa56d0f20586049e19"
+      "bytes": 80183,
+      "sha256": "6943676fcc695c3ce2aad39919f9e9c524e9f038a9d6016110fe17b8167c9f8b"
     },
     {
       "file": "assets/demos/poster-zh.png",
-      "bytes": 84036,
-      "sha256": "546db6a6cf75a3ac621bd1595f0b318f2c6affd837d371befa270bd093f22dff"
+      "bytes": 88087,
+      "sha256": "9ce248b4324552e179ee8cbae64ca52b32631b472b8e05e5c2d1055367c6b3b6"
     },
     {
       "file": "assets/demos/vmware-skills-en.gif",
-      "bytes": 348312,
-      "sha256": "72fb3d32123008cbb9ede8f40bbb99257e3e965a12d3f5637f2c1aa41afff68f"
+      "bytes": 368513,
+      "sha256": "03a339f892f6e38d0a96d6aa533d5cf5134f4b9faf4b42d7f20de035ba8b0ac9"
     },
     {
       "file": "assets/demos/vmware-skills-en.srt",
-      "bytes": 2614,
-      "sha256": "0200b13eb8a52775c7f25128e2d471a0bff819a0a6f1671dcc493625909f0362"
+      "bytes": 3412,
+      "sha256": "f720809c669a9f5520f50f45f7a8db11de21abf3e000580ff44d396ad1d9174b"
     },
     {
       "file": "assets/demos/vmware-skills-zh.gif",
-      "bytes": 288551,
-      "sha256": "8e47cb5d9874b20ea215970b306b12247c2a33aeb7e3109d431fb37f2ccd828e"
+      "bytes": 334693,
+      "sha256": "57a32b5ca6ee5a738925e607cfd217ff7e85cce9c3734dc9069c97f51d5e6d99"
     },
     {
       "file": "assets/demos/vmware-skills-zh.srt",
-      "bytes": 2369,
-      "sha256": "4e9c2eadeb6892409508a502fe4e1b766368cc164433fe27bc8235bb248522a7"
+      "bytes": 3122,
+      "sha256": "20943e6957ecea57c23b12527e4733d9391b9a267fec8bdefff0b9edf995cfed"
     }
   ],
   "captureExcerpts": [
@@ -114,15 +114,23 @@
   "releaseAssets": [
     {
       "name": "vmware-skills-en.mp4",
-      "url": "https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-12/vmware-skills-en.mp4",
-      "bytes": 8195535,
-      "sha256": "f76c74ad9b00d4a3a0f7d1fafe4f7abaabce825fa62e8b235cd1cde45d55b488"
+      "url": "https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-13-model-fit/vmware-skills-en.mp4",
+      "bytes": 10550489,
+      "sha256": "f58465b1471e43aa5c607615f0e193449330849c4bf09aa16c92347a80a9f3aa"
     },
     {
       "name": "vmware-skills-zh.mp4",
-      "url": "https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-12/vmware-skills-zh.mp4",
-      "bytes": 7696193,
-      "sha256": "2ba453be333036e4ec998aa9d5290728d67ea4af7f2df5a8b045221db5a32b54"
+      "url": "https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-13-model-fit/vmware-skills-zh.mp4",
+      "bytes": 9861997,
+      "sha256": "c6066385b958ce9c24b92c03ecafa9a2950952f32f266888a88b2e0248a3f72a"
     }
-  ]
+  ],
+  "modelFit": {
+    "illustrativeWorkflowOnly": true,
+    "realModelMeasurements": false,
+    "finalTasks": 10,
+    "attemptsPerTask": 5,
+    "humanReviewRequired": true,
+    "selection": "Smallest tested passing declared total parameter count per task group and tool scope; not a production recommendation"
+  }
 }
