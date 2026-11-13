@@ -6,11 +6,11 @@ AI 辅助 VMware 运维：提一个问题，沿着证据调查，再规划下一
 
 **15 个 skill · 14 个 MCP server · 一个共享 Policy 库。** 社区维护，MIT 开源，非 VMware、Broadcom 或 Omnissa 官方产品。
 
-[![18 秒只读调查演示](assets/demos/vmware-skills-zh.gif)](https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-12/vmware-skills-zh.mp4)
+[![24 秒只读调查演示](assets/demos/vmware-skills-zh.gif)](https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-13-model-fit/vmware-skills-zh.mp4)
 
 GIF 为合成数据；视频含脱敏的历史截图，详见[视频说明](assets/demos/README-CN.md)。
 
-[下载配音介绍（约 2 分钟）](https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-12/vmware-skills-zh.mp4) · [下载字幕](assets/demos/vmware-skills-zh.srt)
+[下载配音介绍（约 3 分钟）](https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-13-model-fit/vmware-skills-zh.mp4) · [下载字幕](assets/demos/vmware-skills-zh.srt)
 
 如果项目对你有用，欢迎 **Star 这个家族门户**，帮助更多人发现它。
 
@@ -81,11 +81,11 @@ Monitor 不修改 VMware 基础设施，但仍可能在本地写入配置、审�
 
 可使用根目录共享的[模型适配自测任务](MODEL_FIT_SELF_TEST.md)，验证模型与 Agent 宿主的只读任务质量。能力范围与真机兼容性以各组件文档记录为准；包可下载、演示可观看，不等于已验证某个平台。
 
-使用独立的 [model-fit 自测目录](model-fit/README-CN.md) 对比模型尺寸与质量：自动收集合成任务回答，按任务组比较配置。
+选模型可用[共享模型自测流程](https://github.com/vmware-skills/marketplace/blob/main/model-fit/RUNNER-CN.md)：统一任务、复核质量与安全，再按任务组选择最小已测通过配置；不代表生产质量保证。
 
 ## 演示、反馈与社区
 
-- [英文配音视频](https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-12/vmware-skills-en.mp4) · [中文配音视频](https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-12/vmware-skills-zh.mp4)
+- [英文配音视频](https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-13-model-fit/vmware-skills-en.mp4) · [中文配音视频](https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-13-model-fit/vmware-skills-zh.mp4)
 - [复现动画与配音素材](media/vmware-skills-demo/README.md)。
 - [反馈问题或建议](https://github.com/vmware-skills/marketplace/issues)；具体组件缺陷请提交到对应仓库。
 - GitHub：https://github.com/vmware-skills · MIT 许可。

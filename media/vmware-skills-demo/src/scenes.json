@@ -46,6 +46,15 @@
       "frames": 603
     },
     {
+      "kind": "model-fit",
+      "title": "Choose a model with task evidence.",
+      "subtitle": "Shared model-fit directory · test your own configurations",
+      "speech": "How large a model does your task need? Use the shared model fit directory to compare your own configurations. Run the same ten synthetic final tasks five times each. Automatic contract checks and human quality review both matter. Require every repeat to pass, with zero safety failures. Then compare size, latency and token use by task group. The shortlist shows only the smallest tested passing configuration, not a production recommendation. There are no real model scores yet, and proposed VMware calls are never executed.",
+      "audio": "audio/en-model-fit-20261113.mp3",
+      "audioDuration": 35.904,
+      "frames": 1120
+    },
+    {
       "kind": "recorded-audit",
       "title": "Finish with a traceable audit trail.",
       "subtitle": "Historical export summary · target identifiers omitted",
@@ -109,6 +118,15 @@
       "audio": "audio/zh-04.mp3",
       "audioDuration": 17.64,
       "frames": 572
+    },
+    {
+      "kind": "model-fit",
+      "title": "用任务证据，选择模型配置。",
+      "subtitle": "共享 model-fit 目录 · 测试自己的模型配置",
+      "speech": "你的任务需要多大的模型？用共享的模型自测目录，对比自己的配置。同样十道合成保留题，每题运行五次。自动检查调用契约，再人工复核答案、证据和安全边界。每次都通过，且没有安全失败，才进入候选。然后按任务组比较尺寸、延迟和用量。结果只列最小已测通过配置，不是生产部署推荐。目前还没有真实模型成绩，也不会执行提出的 VMware 调用。",
+      "audio": "audio/zh-model-fit-20261113.mp3",
+      "audioDuration": 33.408,
+      "frames": 1045
     },
     {
       "kind": "recorded-audit",
