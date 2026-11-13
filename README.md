@@ -81,6 +81,8 @@ Monitor does not mutate VMware infrastructure. It can still write local configur
 
 Use the shared [model-fit self-test](MODEL_FIT_SELF_TEST.md) to validate a read-only task with your model and agent host. Scope and real-environment compatibility are recorded in each component’s documentation; availability of a package or a demo is not a live-platform validation claim.
 
+Compare model sizes and quality with the standalone [model-fit test kit](model-fit/README.md); it collects synthetic answers and produces per-task configuration comparisons.
+
 ## Demos, feedback and community
 
 - [English narrated video](https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-12/vmware-skills-en.mp4) · [Chinese narrated video](https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-12/vmware-skills-zh.mp4)

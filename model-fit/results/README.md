@@ -19,7 +19,7 @@ To contribute a model assessment:
    Record date, actual model/quantization/framework/version/parser/context length,
    scope, instruction/tool/case/protocol hashes, repeats, per-group failures and
    not-measured fields, human review provenance and limitations. Keep unknowns null.
-3. Update the index to point to that file. No global score or model-size inference.
+3. Update the index to point to that file. No global score or universal model-size inference.
    Static proposed-action results must stay separate from future autonomous/lab runs.
 4. Do not commit raw responses, operator packs, provider URLs, credentials, real
    inventory or customer data. Those belong in ignored local `out/`, if retained at all.
@@ -28,3 +28,13 @@ The seal is operator-held and review identity/repeated generation are not indepe
 verified by this offline kit. A passing group does not establish production safety,
 independent approval, low failure probability or lowest cost. Repeat the assessment
 when its configuration or contracts change materially.
+
+## Automated collection reports
+
+The optional collector in [RUNNER.md](../RUNNER.md) writes local experiment summaries.
+Its comparison command can show the smallest operator-declared total parameter size
+among fully reviewed passing held-out configurations, separately for each task group
+and tool scope. This is limited to measured configurations, not a model-size threshold
+or autonomous-deployment recommendation. Keep the complete generation configuration,
+seal/fingerprints, review provenance and error counts when sharing sanitized summaries.
+An estimated token cost is not a bill or total-cost result. Raw answers stay local.

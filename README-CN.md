@@ -81,6 +81,8 @@ Monitor 不修改 VMware 基础设施，但仍可能在本地写入配置、审�
 
 可使用根目录共享的[模型适配自测任务](MODEL_FIT_SELF_TEST.md)，验证模型与 Agent 宿主的只读任务质量。能力范围与真机兼容性以各组件文档记录为准；包可下载、演示可观看，不等于已验证某个平台。
 
+使用独立的 [model-fit 自测目录](model-fit/README-CN.md) 对比模型尺寸与质量：自动收集合成任务回答，按任务组比较配置。
+
 ## 演示、反馈与社区
 
 - [英文配音视频](https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-12/vmware-skills-en.mp4) · [中文配音视频](https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-12/vmware-skills-zh.mp4)
