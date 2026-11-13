@@ -8,6 +8,17 @@ MCP installation, or vCenter access is required. The public standalone copy is
 This folder evaluates **proposed actions and evidence reasoning**. It does not
 execute the model's proposed calls and cannot establish autonomous tool reliability.
 
+## Automated model-size comparison
+
+Use [RUNNER.md](RUNNER.md) for a copyable workflow: connect a compatible local or
+remote model endpoint, collect answers, review them, and compare configurations by
+task group, declared total/active parameter count, quantization, quality, latency and
+tokens. Start with one development request; final comparison uses 50 requests per
+configuration/scope (10 held-out cases × 5 repeats). The collector requires the
+additional Policy dependency and explicit `--send`. No VMware environment is needed.
+Only complete, human-reviewed held-out results can enter the **smallest tested
+passing configuration** shortlist. This is not a universal size recommendation.
+
 ## What is included
 
 | Group | Development | Held out | Decisions to check |

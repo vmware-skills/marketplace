@@ -81,3 +81,13 @@ Elapsed/cost/review: measured values or "not measured" | Verdict: not qualified 
 ```
 
 If a run reveals a defect, report the **sanitized** question, product and skill versions, expected versus observed behavior, and the failing check. Keep raw traces and target data private. A maintainer can turn a reproducible defect into a regression case.
+
+## Automated configuration comparison / 自动配置对比
+
+For a standalone synthetic model-size/quality assessment, use
+[model-fit/RUNNER.md](model-fit/RUNNER.md) ([中文](model-fit/RUNNER-CN.md)).
+It collects compatible API answers, requires human quality review, and compares
+per-task configurations. It does not execute VMware calls or replace this host/lab check.
+
+模型尺寸与质量的独立合成任务对比见上述目录：自动收集接口回答、人工复核、按任务组比较配置；
+不会执行 VMware 调用，也不能代替本页的宿主/真机验证。

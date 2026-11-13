@@ -1,0 +1,20 @@
+{
+  "base_url": "http://localhost:11434/v1",
+  "api_key_env": null,
+  "deployment": {
+    "model": "REPLACE_WITH_EXACT_SERVED_MODEL_ID",
+    "quantization": null,
+    "framework": "ollama",
+    "framework_version": null,
+    "tool_call_parser": "not-applicable: JSON proposed-action assessment",
+    "context_length": null
+  },
+  "parameters_billion": null,
+  "active_parameters_billion": null,
+  "hardware": null,
+  "temperature": 0,
+  "max_tokens": 4096,
+  "timeout_seconds": 120,
+  "input_usd_per_million": null,
+  "output_usd_per_million": null
+}
