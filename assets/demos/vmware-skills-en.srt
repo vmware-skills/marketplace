@@ -1,131 +1,123 @@
 1
-00:00:00,000 --> 00:00:03,222
-What needs attention in your VMware environment?
+00:00:00,000 --> 00:00:06,983
+VMware operations teams handle inventory checks, incident investigations and repeatable changes every day.
 
 2
-00:00:03,222 --> 00:00:12,888
-VMware Skills connects an AI assistant to focused skills and MCP tools, helping engineers investigate infrastructure and plan their next steps.
+00:00:06,983 --> 00:00:11,727
+VMware Skills brings AI assistance and focused automation to that work.
 
 3
-00:00:14,300 --> 00:00:19,638
-The family covers vSphere, networking, storage, observability and more.
+00:00:11,727 --> 00:00:20,752
+It is designed to reduce repetitive information gathering while keeping evidence, existing permissions and auditability in the workflow.
 
 4
-00:00:19,638 --> 00:00:21,818
-Pilot coordinates workflows.
-
-5
-00:00:21,818 --> 00:00:25,727
-Domain servers connect to their management systems.
-
-6
-00:00:25,727 --> 00:00:30,464
-Policy provides shared checks, sanitization and audit logging.
-
-7
-00:00:30,464 --> 00:00:33,020
+00:00:20,752 --> 00:00:22,992
 Start with the read-only Monitor.
 
+5
+00:00:24,400 --> 00:00:29,738
+The family covers vSphere, networking, storage, observability and more.
+
+6
+00:00:29,738 --> 00:00:31,918
+Pilot coordinates workflows.
+
+7
+00:00:31,918 --> 00:00:35,827
+Domain servers connect to their management systems.
+
 8
-00:00:34,433 --> 00:00:38,173
-Here is a historical screenshot from an actual session.
+00:00:35,827 --> 00:00:40,564
+Policy provides shared checks, sanitization and audit logging.
 
 9
-00:00:38,173 --> 00:00:43,681
-The inventory view returned one vCenter, two standalone hosts, and thirteen VMs.
+00:00:40,564 --> 00:00:43,120
+Start with the read-only Monitor.
 
 10
-00:00:43,681 --> 00:00:48,033
-The notes column containing environment identifiers is omitted.
+00:00:44,533 --> 00:00:48,273
+Here is a historical screenshot from an actual session.
 
 11
-00:00:48,033 --> 00:00:52,793
-These are recorded results, not a fresh inventory of the environment.
+00:00:48,273 --> 00:00:53,781
+The inventory view returned one vCenter, two standalone hosts, and thirteen VMs.
 
 12
-00:00:54,200 --> 00:00:59,180
-The health screenshot records connected hosts and critical alarms in the same view.
+00:00:53,781 --> 00:00:58,133
+The notes column containing environment identifiers is omitted.
 
 13
-00:00:59,180 --> 00:01:01,820
-That does not establish a current incident.
+00:00:58,133 --> 00:01:02,893
+These are recorded results, not a fresh inventory of the environment.
 
 14
-00:01:01,820 --> 00:01:08,840
-Check when the observation was captured and whether the alarms still apply before deciding what to investigate next.
+00:01:04,300 --> 00:01:09,280
+The health screenshot records connected hosts and critical alarms in the same view.
 
 15
-00:01:10,267 --> 00:01:15,638
-When changes are needed, use the relevant domain skill and a reviewed workflow.
+00:01:09,280 --> 00:01:11,920
+That does not establish a current incident.
 
 16
-00:01:15,638 --> 00:01:19,581
-Existing VMware permissions and local policy still apply.
+00:01:11,920 --> 00:01:18,940
+Check when the observation was captured and whether the alarms still apply before deciding what to investigate next.
 
 17
-00:01:19,581 --> 00:01:23,252
-Destructive tools use preview and confirmation gates.
+00:01:20,367 --> 00:01:25,738
+When changes are needed, use the relevant domain skill and a reviewed workflow.
 
 18
-00:01:23,252 --> 00:01:28,963
-A confirmation flag is not independent human approval, and rollback is best effort.
+00:01:25,738 --> 00:01:29,681
+Existing VMware permissions and local policy still apply.
 
 19
-00:01:30,367 --> 00:01:32,965
-How large a model does your task need?
+00:01:29,681 --> 00:01:33,352
+Destructive tools use preview and confirmation gates.
 
 20
-00:01:32,965 --> 00:01:37,821
-Use the shared model fit directory to compare your own configurations.
+00:01:33,352 --> 00:01:39,063
+A confirmation flag is not independent human approval, and rollback is best effort.
 
 21
-00:01:37,821 --> 00:01:41,651
-Run the same ten synthetic final tasks five times each.
+00:01:40,467 --> 00:01:45,507
+An optional model self-test helps your team assess which model fits its tasks.
 
 22
-00:01:41,651 --> 00:01:46,028
-Automatic contract checks and human quality review both matter.
+00:01:45,507 --> 00:01:50,548
+Compare the same synthetic scenarios using automatic checks and human review.
 
 23
-00:01:46,028 --> 00:01:49,926
-Require every repeat to pass, with zero safety failures.
+00:01:50,548 --> 00:01:57,075
+This supports model choice, without executing VMware changes or guaranteeing production reliability.
 
 24
-00:01:49,926 --> 00:01:53,756
-Then compare size, latency and token use by task group.
-
-25
-00:01:53,756 --> 00:02:00,663
-The shortlist shows only the smallest tested passing configuration, not a production recommendation.
-
-26
-00:02:00,663 --> 00:02:06,271
-There are no real model scores yet, and proposed VMware calls are never executed.
-
-27
-00:02:07,700 --> 00:02:09,999
+00:01:58,500 --> 00:02:00,799
 Finally, follow the audit trail.
 
-28
-00:02:09,999 --> 00:02:18,547
+25
+00:02:00,799 --> 00:02:09,347
 This is an assistant-prepared summary of exported records, showing time, skill, tool, MCP or CLI, status and duration.
 
-29
-00:02:18,547 --> 00:02:22,138
+26
+00:02:09,347 --> 00:02:12,938
 We omit the target column and show fourteen rows.
 
-30
-00:02:22,138 --> 00:02:28,172
+27
+00:02:12,938 --> 00:02:18,972
 Names reflect the captured version; use the original records to check completeness.
 
+28
+00:02:20,400 --> 00:02:28,593
+The goal is practical: less repetitive work, clearer investigations and traceable operational workflows for VMware teams.
+
+29
+00:02:28,593 --> 00:02:34,483
+Start with one read-only task, validate the result, and add automation where it helps.
+
+30
+00:02:34,483 --> 00:02:40,036
+VMware Skills is a community project, not an official VMware or Broadcom product.
+
 31
-00:02:29,600 --> 00:02:35,827
-VMware Skills is a community open-source project, not an official VMware or Broadcom product.
-
-32
-00:02:35,827 --> 00:02:41,785
-Explore the demos, try a read-only task, and share what works or what needs improvement.
-
-33
-00:02:41,785 --> 00:02:46,472
-If it helps your work, star the family portal to help others find it.
+00:02:40,036 --> 00:02:42,744
+Feedback and contributions are welcome.
