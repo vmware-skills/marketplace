@@ -1,12 +1,12 @@
 {
   "generatedAt": "2026-11-13",
-  "renderRun": "https://github.com/vmware-skills/marketplace/actions/runs/43350659779",
-  "renderSourceCommit": "06933b54380bdfb98e15da88f9ad68a0b7828c5e",
+  "renderRun": "https://github.com/vmware-skills/marketplace/actions/runs/43357241552",
+  "renderSourceCommit": "d89c0a6163f281dce9fe0128cab10f6b7377f129",
   "narration": "AI-generated preset voices: en-US-AriaNeural and zh-CN-XiaoxiaoNeural",
-  "evidence": "Short GIFs: synthetic triage plus model-fit workflow. Introductions: separate English/Chinese historical screenshots and labeled readable transcripts, plus synthetic model-selection workflow. No actual model scores or new live tests.",
+  "evidence": "Operations-first story for VMware teams: synthetic triage and reviewed operational workflows, language-specific historical screenshots and audit transcripts. Model-fit is an optional supporting self-test. No measured productivity/reliability guarantee, model scores or new live tests.",
   "durationsSeconds": {
-    "en": 167.915,
-    "zh": 161.237
+    "en": 164.181,
+    "zh": 157.867
   },
   "gif": {
     "seconds": 24,
@@ -17,33 +17,33 @@
   "files": [
     {
       "file": "assets/demos/poster-en.png",
-      "bytes": 80183,
-      "sha256": "6943676fcc695c3ce2aad39919f9e9c524e9f038a9d6016110fe17b8167c9f8b"
+      "bytes": 70016,
+      "sha256": "94781a84742d59948a9e7af28dbe7bef659ee49115dbd52cf964a23667b384c8"
     },
     {
       "file": "assets/demos/poster-zh.png",
-      "bytes": 88087,
-      "sha256": "9ce248b4324552e179ee8cbae64ca52b32631b472b8e05e5c2d1055367c6b3b6"
+      "bytes": 67917,
+      "sha256": "679a6e224c1e4e59975cb4e22c37ca3596bfd43d2df66bb6d36a3eeebf7c48f7"
     },
     {
       "file": "assets/demos/vmware-skills-en.gif",
-      "bytes": 368513,
-      "sha256": "03a339f892f6e38d0a96d6aa533d5cf5134f4b9faf4b42d7f20de035ba8b0ac9"
+      "bytes": 308097,
+      "sha256": "d347b04cbbd70422794deacfcd0a7f9838e48baccd817742fe77aef67435a674"
     },
     {
       "file": "assets/demos/vmware-skills-en.srt",
-      "bytes": 3412,
-      "sha256": "f720809c669a9f5520f50f45f7a8db11de21abf3e000580ff44d396ad1d9174b"
+      "bytes": 3311,
+      "sha256": "4bff71636440375ee9d486306bf0246fcbd0ceb8ec7dadf2414be59088a89f88"
     },
     {
       "file": "assets/demos/vmware-skills-zh.gif",
-      "bytes": 334693,
-      "sha256": "57a32b5ca6ee5a738925e607cfd217ff7e85cce9c3734dc9069c97f51d5e6d99"
+      "bytes": 277403,
+      "sha256": "93f4be9f7072765b78a8ac2e1de619de77b4ef5757bf50e079d3c8004a69b2e7"
     },
     {
       "file": "assets/demos/vmware-skills-zh.srt",
-      "bytes": 3122,
-      "sha256": "20943e6957ecea57c23b12527e4733d9391b9a267fec8bdefff0b9edf995cfed"
+      "bytes": 2955,
+      "sha256": "e5eb25b4ed0c662b194d5341235463a097a49afc6ff116e4292c369056692f49"
     }
   ],
   "captureExcerpts": [
@@ -114,15 +114,15 @@
   "releaseAssets": [
     {
       "name": "vmware-skills-en.mp4",
-      "url": "https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-13-model-fit/vmware-skills-en.mp4",
-      "bytes": 10550489,
-      "sha256": "f58465b1471e43aa5c607615f0e193449330849c4bf09aa16c92347a80a9f3aa"
+      "url": "https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-13-operations/vmware-skills-en.mp4",
+      "bytes": 10300145,
+      "sha256": "f82bcfc1ac5faee9e42ee08d6633b8298e8eb356d7c3ab83a53124c593bdce4f"
     },
     {
       "name": "vmware-skills-zh.mp4",
-      "url": "https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-13-model-fit/vmware-skills-zh.mp4",
-      "bytes": 9861997,
-      "sha256": "c6066385b958ce9c24b92c03ecafa9a2950952f32f266888a88b2e0248a3f72a"
+      "url": "https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-13-operations/vmware-skills-zh.mp4",
+      "bytes": 9577517,
+      "sha256": "363e006c191f2fda25aa7dd3063a7a623a43ba0c93376ad08e6c8423b0a9092d"
     }
   ],
   "modelFit": {
@@ -132,5 +132,11 @@
     "attemptsPerTask": 5,
     "humanReviewRequired": true,
     "selection": "Smallest tested passing declared total parameter count per task group and tool scope; not a production recommendation"
+  },
+  "positioning": {
+    "audience": "VMware operations teams",
+    "primary": "AI-assisted VMware automation, efficiency and traceable workflows",
+    "modelFit": "Optional supporting capability, not the headline",
+    "gifStory": "14 seconds triage + 10 seconds reviewed workflow"
   }
 }
