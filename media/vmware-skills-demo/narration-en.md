@@ -1,6 +1,6 @@
-## 1. Ask a question. Follow the evidence.
+## 1. AI-assisted VMware automation.
 
-What needs attention in your VMware environment? VMware Skills connects an AI assistant to focused skills and MCP tools, helping engineers investigate infrastructure and plan their next steps.
+VMware operations teams handle inventory checks, incident investigations and repeatable changes every day. VMware Skills brings AI assistance and focused automation to that work. It is designed to reduce repetitive information gathering while keeping evidence, existing permissions and auditability in the workflow. Start with the read-only Monitor.
 
 ## 2. One family. Focused responsibilities.
 
@@ -18,14 +18,14 @@ The health screenshot records connected hosts and critical alarms in the same vi
 
 When changes are needed, use the relevant domain skill and a reviewed workflow. Existing VMware permissions and local policy still apply. Destructive tools use preview and confirmation gates. A confirmation flag is not independent human approval, and rollback is best effort.
 
-## 6. Choose a model with task evidence.
+## 6. Also included: task-level model self-tests.
 
-How large a model does your task need? Use the shared model fit directory to compare your own configurations. Run the same ten synthetic final tasks five times each. Automatic contract checks and human quality review both matter. Require every repeat to pass, with zero safety failures. Then compare size, latency and token use by task group. The shortlist shows only the smallest tested passing configuration, not a production recommendation. There are no real model scores yet, and proposed VMware calls are never executed.
+An optional model self-test helps your team assess which model fits its tasks. Compare the same synthetic scenarios using automatic checks and human review. This supports model choice, without executing VMware changes or guaranteeing production reliability.
 
 ## 7. Finish with a traceable audit trail.
 
 Finally, follow the audit trail. This is an assistant-prepared summary of exported records, showing time, skill, tool, MCP or CLI, status and duration. We omit the target column and show fourteen rows. Names reflect the captured version; use the original records to check completeness.
 
-## 8. Make everyday operations a little easier.
+## 8. Help your VMware team work more efficiently.
 
-VMware Skills is a community open-source project, not an official VMware or Broadcom product. Explore the demos, try a read-only task, and share what works or what needs improvement. If it helps your work, star the family portal to help others find it.
+The goal is practical: less repetitive work, clearer investigations and traceable operational workflows for VMware teams. Start with one read-only task, validate the result, and add automation where it helps. VMware Skills is a community project, not an official VMware or Broadcom product. Feedback and contributions are welcome.

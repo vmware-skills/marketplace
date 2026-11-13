@@ -1,16 +1,16 @@
 # VMware Skills
 
-AI-assisted VMware operations: ask a question, investigate the evidence, and plan the next step. Start with read-only Monitor; add focused modules when needed.
+AI-assisted automation for VMware operations teams: streamline repetitive checks, investigate with evidence, and follow reviewed workflows. Start with read-only Monitor; add focused modules when needed.
 
 English · [简体中文](README-CN.md)
 
 **15 skills · 14 MCP servers · one shared Policy library.** Community-maintained, MIT-licensed, and not an official VMware, Broadcom or Omnissa product.
 
-[![24-second read-only investigation demo](assets/demos/vmware-skills-en.gif)](https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-13-model-fit/vmware-skills-en.mp4)
+[![24-second read-only investigation demo](assets/demos/vmware-skills-en.gif)](https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-13-operations/vmware-skills-en.mp4)
 
 GIF: synthetic data. Videos: redacted historical screenshots. [Video notes](assets/demos/README.md).
 
-[Download the narrated introduction (~3 minutes)](https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-13-model-fit/vmware-skills-en.mp4) · [Download captions](assets/demos/vmware-skills-en.srt)
+[Download the narrated introduction (~3 minutes)](https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-13-operations/vmware-skills-en.mp4) · [Download captions](assets/demos/vmware-skills-en.srt)
 
 If the project helps your work, **star this family portal** so others can find it.
 
@@ -85,7 +85,7 @@ Choose a model with the [shared model-fit workflow](https://github.com/vmware-sk
 
 ## Demos, feedback and community
 
-- [English narrated video](https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-13-model-fit/vmware-skills-en.mp4) · [Chinese narrated video](https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-13-model-fit/vmware-skills-zh.mp4)
+- [English narrated video](https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-13-operations/vmware-skills-en.mp4) · [Chinese narrated video](https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-13-operations/vmware-skills-zh.mp4)
 - [Reproduce the animations and audio](media/vmware-skills-demo/README.md).
 - [Share an issue or suggestion](https://github.com/vmware-skills/marketplace/issues). Component bugs belong in the relevant component repository.
 - GitHub: https://github.com/vmware-skills · MIT license.

@@ -1,16 +1,16 @@
 # VMware Skills
 
-AI 辅助 VMware 运维：提一个问题，沿着证据调查，再规划下一步。从只读 Monitor 开始，按需增加专业模块。
+面向 VMware 运维团队的 AI 辅助自动化：简化重复检查、依证据调查故障、按复核流程操作。从只读 Monitor 开始，按需增加专业模块。
 
 [English](README.md) · 简体中文
 
 **15 个 skill · 14 个 MCP server · 一个共享 Policy 库。** 社区维护，MIT 开源，非 VMware、Broadcom 或 Omnissa 官方产品。
 
-[![24 秒只读调查演示](assets/demos/vmware-skills-zh.gif)](https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-13-model-fit/vmware-skills-zh.mp4)
+[![24 秒只读调查演示](assets/demos/vmware-skills-zh.gif)](https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-13-operations/vmware-skills-zh.mp4)
 
 GIF 为合成数据；视频含脱敏的历史截图，详见[视频说明](assets/demos/README-CN.md)。
 
-[下载配音介绍（约 3 分钟）](https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-13-model-fit/vmware-skills-zh.mp4) · [下载字幕](assets/demos/vmware-skills-zh.srt)
+[下载配音介绍（约 3 分钟）](https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-13-operations/vmware-skills-zh.mp4) · [下载字幕](assets/demos/vmware-skills-zh.srt)
 
 如果项目对你有用，欢迎 **Star 这个家族门户**，帮助更多人发现它。
 
@@ -85,7 +85,7 @@ Monitor 不修改 VMware 基础设施，但仍可能在本地写入配置、审�
 
 ## 演示、反馈与社区
 
-- [英文配音视频](https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-13-model-fit/vmware-skills-en.mp4) · [中文配音视频](https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-13-model-fit/vmware-skills-zh.mp4)
+- [英文配音视频](https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-13-operations/vmware-skills-en.mp4) · [中文配音视频](https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-13-operations/vmware-skills-zh.mp4)
 - [复现动画与配音素材](media/vmware-skills-demo/README.md)。
 - [反馈问题或建议](https://github.com/vmware-skills/marketplace/issues)；具体组件缺陷请提交到对应仓库。
 - GitHub：https://github.com/vmware-skills · MIT 许可。

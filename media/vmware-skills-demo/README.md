@@ -18,11 +18,13 @@ The narrative follows the generic presentation structure: architecture, focused 
 
 Publish generated introduction MP4s as GitHub Release assets after review; update `assets/demos/manifest.json` with their URLs and checksums. Do not commit generated introduction MP4s. Small sanitized capture clips in `public/captures/` remain versioned render inputs.
 
-## Model selection segment (2026-11-13)
+## Operations-first narrative (2026-11-13 revision)
 
-The 24-second GIF has two halves: read-only synthetic triage, then the shared model-fit workflow.
-The narrated introduction adds a model-selection chapter before the historical audit segment.
-It shows ten synthetic final tasks × five attempts, automatic checks plus human review, and
-the smallest tested passing configuration per task group. There are no model scores in this
-animation; it is not a live model run, native tool-call test or production recommendation.
-English/Chinese guides are in `../../model-fit/RUNNER.md` and `RUNNER-CN.md`.
+The audience is VMware operations teams. The primary story is AI-assisted automation:
+less repetitive information gathering, evidence-led investigation, reviewed workflows
+and auditability. These are product goals and workflow capabilities, not measured
+productivity improvements or reliability guarantees. The 24-second GIF shows 14 seconds
+of synthetic triage and 10 seconds of a reviewed operational workflow. Model-fit is an
+optional supporting self-test, not the headline or the GIF's main subject. Its short
+chapter in the narrated introduction preserves human review and synthetic-only limits.
+The historical audit segment and language-specific redacted screenshots remain unchanged.

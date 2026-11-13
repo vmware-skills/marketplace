@@ -9,7 +9,7 @@ export const ModelFit: React.FC<{lang: Lang; progress: number}> = ({lang, progre
     [tx(lang, 'Connect', '连接模型'), tx(lang, 'Record size, quantization and context.', '记录尺寸、量化和上下文。')],
     [tx(lang, 'Test', '统一测试'), tx(lang, '10 final tasks × 5 attempts. Same sealed cases.', '10 道保留题 × 5 次，使用同一封存题集。')],
     [tx(lang, 'Review', '质量复核'), tx(lang, 'Schema checks + human answer and safety review.', '结构自动检查，加人工答案与安全复核。')],
-    [tx(lang, 'Compare', '分组选择'), tx(lang, 'Smallest tested passing configuration per task group.', '按任务组选择最小已测通过配置。')],
+    [tx(lang, 'Compare', '分组选择'), tx(lang, 'Smallest tested passing configuration per task group.', '选择该组已测通过的合适配置。')],
   ];
   return <div style={{background:'white',border:'1px solid #dce5ef',borderRadius:22,padding:32}}>
     <div style={{fontSize:25,color:'#0891b2',fontWeight:700,marginBottom:25}}>marketplace / model-fit</div>
@@ -20,7 +20,7 @@ export const ModelFit: React.FC<{lang: Lang; progress: number}> = ({lang, progre
         <div style={{fontSize:25,lineHeight:1.4}}>{body}</div>
       </div>)}
     </div>
-    <div style={{fontSize:25,fontWeight:650,marginTop:24}}>{tx(lang, 'Quality first. Compare size, latency and tokens.', '先满足质量门槛，再比较尺寸、延迟与 token。')}</div>
+    <div style={{fontSize:25,fontWeight:650,marginTop:24}}>{tx(lang, 'Supporting capability: assess model fit for your team’s tasks.', '辅助能力：验证模型是否适合团队的任务。')}</div>
     <div style={{fontSize:22,lineHeight:1.45,color:'#a45b08',marginTop:12}}>{tx(lang, 'Synthetic tasks only · No VMware calls · No real model scores yet', '仅合成任务 · 不执行 VMware 调用 · 暂无真实模型成绩')}</div>
   </div>;
 };
