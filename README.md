@@ -12,7 +12,7 @@ GIF: synthetic data. Videos: redacted historical screenshots. [Video notes](asse
 
 [Download the narrated introduction (~3 minutes)](https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-13-operations/vmware-skills-en.mp4) · [Download captions](assets/demos/vmware-skills-en.srt)
 
-If the project helps your work, **star this family portal** so others can find it.
+Tried a module? [Share your setup progress or first useful result](https://github.com/vmware-skills/marketplace/issues/new?template=setup-feedback.yml). Installed, blocked, or using it again: each stage helps improve onboarding. If it helps your work, star this family portal.
 
 ## What can I do with it?
 
@@ -29,7 +29,7 @@ In Claude Code, add the marketplace and install Monitor:
 /plugin install vmware-monitor@vmware-skills
 ```
 
-Requires Claude Code, Python 3.10+ and uv/uvx. PrivateAI requires Python 3.11+. Each plugin retains its component’s pinned runtime configuration. Configure real targets and credentials locally using the [Monitor setup guide](https://github.com/vmware-skills/VMware-Monitor/blob/main/skills/vmware-monitor/references/setup-guide.md); installation alone does not establish a connection. Pilot also needs the companion MCP executables for the workflows you run.
+Requires Claude Code, Python 3.10+ and uv/uvx. PrivateAI requires Python 3.11+. Each plugin retains its component’s pinned runtime configuration. For the first real query, follow the [Monitor first-result path](https://github.com/vmware-skills/VMware-Monitor#readme-quick-start): install the CLI, then use `init` → `doctor` → `attention` with one locally configured target. Keep credentials local; plugin installation alone does not establish a connection. Pilot also needs the companion MCP executables for the workflows you run.
 
 <details>
 <summary>Optional: install the entire plugin catalog</summary>

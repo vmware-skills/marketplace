@@ -1,0 +1,72 @@
+name: Setup progress / 接入反馈
+description: Share a first result, repeat use, or the step that blocked you / 分享首次结果、再次使用或卡点
+title: "[Setup feedback]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        One minute is enough. This issue is public. Share product/version and stage only; keep target addresses, account names, credentials and raw logs local. A successful setup report is welcome too.
+        一分钟即可。本 Issue 公开；仅分享产品/版本和阶段，目标地址、账号、凭据及原始日志留在本地。顺利接入也欢迎反馈。
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component / 模块
+      options:
+        - VMware-Monitor
+        - VMware-AIops
+        - VMware-Aria
+        - VMware-Storage
+        - VMware-VKS
+        - VMware-NSX
+        - VMware-NSX-Security
+        - VMware-AVI
+        - VMware-Harden
+        - VMware-Debug
+        - VMware-Log-Insight
+        - VMware-VDI
+        - VMware-PrivateAI
+        - VMware-Pilot
+        - VMware-Policy
+    validations:
+      required: true
+  - type: dropdown
+    id: agent_host
+    attributes:
+      label: Agent host / Agent 宿主
+      options:
+        - Claude Code
+        - Cursor
+        - Codex
+        - Gemini CLI
+        - Cline
+        - Goose
+        - CLI only / 仅 CLI
+        - Other / 其他
+    validations:
+      required: true
+  - type: input
+    id: vmware_version
+    attributes:
+      label: VMware product and version / VMware 产品与版本
+      description: "For example vCenter 8.0, 9.1, or not connected yet; no address or organization name. Version selection does not imply tested compatibility. / 如 vCenter 8.0、9.1 或尚未连接；不填地址或组织名。填写版本不代表该版本已实测兼容。"
+    validations:
+      required: true
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Furthest stage / 最远完成阶段
+      options:
+        - Installed / 已安装
+        - Configured / 已配置
+        - First useful result / 首次有用结果
+        - Used again / 再次使用
+        - Blocked / 接入受阻
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: What worked, or which step blocked you? / 哪个任务有用，或哪一步卡住？
+      description: Optional short description; no logs, addresses, account names or credentials. / 可选简述；不含日志、地址、账号或凭据。
+    validations:
+      required: false
