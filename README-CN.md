@@ -12,7 +12,7 @@ GIF 为合成数据；视频含脱敏的历史截图，详见[视频说明](asse
 
 [下载配音介绍（约 3 分钟）](https://github.com/vmware-skills/marketplace/releases/download/demos-2026-11-13-operations/vmware-skills-zh.mp4) · [下载字幕](assets/demos/vmware-skills-zh.srt)
 
-如果项目对你有用，欢迎 **Star 这个家族门户**，帮助更多人发现它。
+试用了某个模块？[分享接入进度或首次有用结果](https://github.com/vmware-skills/marketplace/issues/new?template=setup-feedback.yml)。已安装、被卡住或再次使用，每个阶段都能帮助改进接入体验。如果它对工作有用，欢迎 star 家族门户。
 
 ## 它能帮我做什么？
 
@@ -30,6 +30,8 @@ GIF 为合成数据；视频含脱敏的历史截图，详见[视频说明](asse
 ```
 
 需要 Claude Code、Python 3.10+ 和 uv/uvx；PrivateAI 需要 Python 3.11+。各插件保留对应组件的固定版本运行配置。真实目标和凭据按照 [Monitor 配置指南](https://github.com/vmware-skills/VMware-Monitor/blob/main/skills/vmware-monitor/references/setup-guide.md)保存在本地；安装不代表已经连接。Pilot 还需要所执行工作流对应的 MCP 可执行程序。
+
+首次真实查询按 [Monitor 接入路径](https://github.com/vmware-skills/VMware-Monitor#readme-quick-start)安装 CLI，再以一个本地配置目标完成 `init` → `doctor` → `attention`。凭据留在本地；仅安装插件不代表已经建立连接。
 
 <details>
 <summary>可选：安装全部插件</summary>
