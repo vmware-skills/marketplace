@@ -31,7 +31,28 @@ GIF 为合成数据；视频含脱敏的历史截图，详见[视频说明](asse
 
 需要 Claude Code、Python 3.10+ 和 uv/uvx；PrivateAI 需要 Python 3.11+。各插件保留对应组件的固定版本运行配置。真实目标和凭据按照 [Monitor 配置指南](https://github.com/vmware-skills/VMware-Monitor/blob/main/skills/vmware-monitor/references/setup-guide.md)保存在本地；安装不代表已经连接。Pilot 还需要所执行工作流对应的 MCP 可执行程序。
 
-首次真实查询按 [Monitor 接入路径](https://github.com/vmware-skills/VMware-Monitor#readme-quick-start)安装 CLI，再以一个本地配置目标完成 `init` → `doctor` → `attention`。凭据留在本地；仅安装插件不代表已经建立连接。
+首次真实查询按 [Monitor 接入路径](#first-use)安装 CLI，再以一个本地配置目标完成 `init` → `doctor` → `attention`。凭据留在本地；仅安装插件不代表已经建立连接。
+
+
+<a id="first-use"></a>
+
+<details>
+<summary>取得首次有用的只读结果</summary>
+
+即使只安装了 Agent 插件，也可安装 CLI 来完成本地配置：
+
+```sh
+uv tool install vmware-monitor==2.6.2
+vmware-monitor init
+vmware-monitor doctor
+vmware-monitor attention
+```
+
+先从一个 vCenter 开始，使用在预期清单范围具有 **Read-Only** 角色的专用账号。`init` 在本地写入配置与凭据，并提供连接测试。保持 TLS 验证开启并信任组织的 CA。已有配置会保留，除非你选择覆盖。
+
+`doctor` 通过后，确认 `attention` 为预期目标返回可读取的事实。目标不可达或权限不足表示接入受阻，不代表环境健康。[分享已完成的阶段](https://github.com/vmware-skills/marketplace/issues/new?template=setup-feedback.yml)；地址、账号、凭据和原始日志留在本地。
+
+</details>
 
 <details>
 <summary>可选：安装全部插件</summary>

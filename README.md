@@ -29,7 +29,28 @@ In Claude Code, add the marketplace and install Monitor:
 /plugin install vmware-monitor@vmware-skills
 ```
 
-Requires Claude Code, Python 3.10+ and uv/uvx. PrivateAI requires Python 3.11+. Each plugin retains its component’s pinned runtime configuration. For the first real query, follow the [Monitor first-result path](https://github.com/vmware-skills/VMware-Monitor#readme-quick-start): install the CLI, then use `init` → `doctor` → `attention` with one locally configured target. Keep credentials local; plugin installation alone does not establish a connection. Pilot also needs the companion MCP executables for the workflows you run.
+Requires Claude Code, Python 3.10+ and uv/uvx. PrivateAI requires Python 3.11+. Each plugin retains its component’s pinned runtime configuration. For the first real query, follow the [Monitor first-result path](#first-use): install the CLI, then use `init` → `doctor` → `attention` with one locally configured target. Keep credentials local; plugin installation alone does not establish a connection. Pilot also needs the companion MCP executables for the workflows you run.
+
+
+<a id="first-use"></a>
+
+<details>
+<summary>Get your first useful read-only result</summary>
+
+Install the CLI for local setup, including when you installed only the agent plugin:
+
+```sh
+uv tool install vmware-monitor==2.6.2
+vmware-monitor init
+vmware-monitor doctor
+vmware-monitor attention
+```
+
+Start with one vCenter and a dedicated account with the **Read-Only** role on the intended inventory scope. `init` writes configuration and credentials locally and offers a connection test. Keep TLS verification enabled and trust your organization's CA. Existing configuration is kept unless you choose to overwrite it.
+
+After `doctor` passes, check that `attention` returns readable facts for the intended target. An unreachable target or missing permissions is a setup blocker, not a healthy result. [Share the stage you reached](https://github.com/vmware-skills/marketplace/issues/new?template=setup-feedback.yml); keep addresses, account names, credentials and raw logs local.
+
+</details>
 
 <details>
 <summary>Optional: install the entire plugin catalog</summary>
