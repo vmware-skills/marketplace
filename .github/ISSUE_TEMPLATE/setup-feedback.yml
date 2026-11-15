@@ -40,6 +40,9 @@ body:
         - Gemini CLI
         - Cline
         - Goose
+        - Claude Desktop (.mcpb)
+        - VS Code / GitHub Copilot
+        - WorkBuddy (腾讯)
         - CLI only / 仅 CLI
         - Other / 其他
     validations:
