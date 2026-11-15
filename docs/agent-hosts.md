@@ -49,6 +49,30 @@ WorkBuddy (Tencent) runs on your machine, so it can reach an internal vCenter; `
 
 Conversation content and tool results (host names, IPs, alarms) go to the model service you select in WorkBuddy. Check your organization's data policy before connecting production targets.
 
+## Claude Desktop, VS Code and Docker
+
+Every component README has one-click links next to its install command: a Claude Desktop extension (`.mcpb`, attached to the release) and *Install in VS Code*. Both run the same pinned server as the JSON above. Extensions for modules with write tools start read-only (*Tools to offer* = `read`).
+
+Each component is also published as a container image, `ghcr.io/vmware-skills/<component>:<version>` (amd64 and arm64, for example `ghcr.io/vmware-skills/vmware-monitor:2.6.2`). The image runs the same PyPI release as a non-root user and reads the same local files, so configure on the host first, then mount two directories: the component's config directory (config and `.env`) and `~/.vmware` (shared audit log). Hosts do not expand `~` in JSON; use absolute paths:
+
+```json
+{
+  "mcpServers": {
+    "vmware-monitor": {
+      "command": "docker",
+      "args": ["run", "-i", "--rm",
+        "-v", "/Users/you/.vmware-monitor:/home/app/.vmware-monitor",
+        "-v", "/Users/you/.vmware:/home/app/.vmware",
+        "ghcr.io/vmware-skills/vmware-monitor:2.6.2"]
+    }
+  }
+}
+```
+
+- For modules with write tools, add `"-e", "VMWARE_<MODULE>_MCP_EXPOSE=read"` before the image name to offer read tools only (for example `VMWARE_AIOPS_MCP_EXPOSE=read`).
+- Check the mounts without starting the server: `docker run --rm -v ... --entrypoint vmware-monitor ghcr.io/vmware-skills/vmware-monitor:2.6.2 doctor`.
+- The container needs network access to your targets; pin a version tag rather than `latest`.
+
 ## Local models
 
 Ollama, vLLM and LM Studio are model/runtime choices, not a universal MCP client configuration. Use an agent host with tool calling and MCP support, then register the server using that host's schema. If the host only exposes a shell tool, install the [Monitor CLI](https://github.com/vmware-skills/VMware-Monitor#readme-quick-start) and let the host invoke it under its normal controls. Validate the model and parser with the [shared self-test](../MODEL_FIT_SELF_TEST.md); an installation is not a model-quality result.
