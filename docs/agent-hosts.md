@@ -39,6 +39,16 @@ args = ["--from", "vmware-monitor==2.6.2", "vmware-monitor-mcp"]
 
 See [official OpenAI MCP documentation](https://developers.openai.com/codex/mcp/) for configuration scope and tool controls.
 
+## WorkBuddy
+
+WorkBuddy (Tencent) runs on your machine, so it can reach an internal vCenter; `uvx` and the local configuration must be available there too.
+
+1. **Install the skill**: search the component name (for example `vmware-monitor`, author zw008) in WorkBuddy's skills page or on [SkillHub](https://skillhub.cn).
+2. **Register the MCP server**: open the MCP configuration (`mcp.json`) from WorkBuddy's skills settings and merge the JSON entry above into `mcpServers`, keeping other settings. Menu names follow the current WorkBuddy interface.
+3. **Start read-only**: begin with Monitor. For modules with write tools, set that module's `_MCP_EXPOSE` to `read` (AIops: `"env": {"VMWARE_AIOPS_MCP_EXPOSE": "read"}`) to offer read tools only; see each setup guide.
+
+Conversation content and tool results (host names, IPs, alarms) go to the model service you select in WorkBuddy. Check your organization's data policy before connecting production targets.
+
 ## Local models
 
 Ollama, vLLM and LM Studio are model/runtime choices, not a universal MCP client configuration. Use an agent host with tool calling and MCP support, then register the server using that host's schema. If the host only exposes a shell tool, install the [Monitor CLI](https://github.com/vmware-skills/VMware-Monitor#readme-quick-start) and let the host invoke it under its normal controls. Validate the model and parser with the [shared self-test](../MODEL_FIT_SELF_TEST.md); an installation is not a model-quality result.

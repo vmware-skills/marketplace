@@ -39,6 +39,16 @@ args = ["--from", "vmware-monitor==2.6.2", "vmware-monitor-mcp"]
 
 配置范围与工具控制见 [OpenAI 官方 MCP 文档](https://developers.openai.com/codex/mcp/)。
 
+## WorkBuddy
+
+WorkBuddy（腾讯）在本机运行，可以连接内网 vCenter；`uvx` 和本地配置同样需要在本机可用。
+
+1. **安装技能**：在 WorkBuddy 的技能页或 [SkillHub](https://skillhub.cn) 搜索组件名（如 `vmware-monitor`），作者为 zw008。
+2. **注册 MCP**：在 WorkBuddy 的技能设置中打开 MCP 配置（`mcp.json`），把上面的 JSON 条目合并进 `mcpServers`，保留其他设置。入口名称以 WorkBuddy 当前界面为准。
+3. **先只读**：建议从 Monitor 开始。含写操作的模块可在条目里设置该模块的 `_MCP_EXPOSE` 为 `read`（如 AIops：`"env": {"VMWARE_AIOPS_MCP_EXPOSE": "read"}`），只提供只读工具，细节见各模块 setup guide。
+
+对话内容和工具返回（主机名、IP、告警等）会发送给你在 WorkBuddy 中选择的模型服务。连接生产环境前，请先确认所在组织的数据政策。
+
 ## 本地模型
 
 Ollama、vLLM 与 LM Studio 是模型或运行时选择，没有统一的 MCP 客户端配置。选择支持工具调用与 MCP 的 Agent 宿主，再按该宿主的格式注册服务。如果宿主只提供 shell 工具，可安装 [Monitor CLI](https://github.com/vmware-skills/VMware-Monitor#readme-quick-start)，通过宿主原有控制调用。用[共享自测](../MODEL_FIT_SELF_TEST.md) 验证模型和 parser；安装成功不是模型质量结论。
